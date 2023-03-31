@@ -3,4 +3,4 @@
 ## Pregunta: ¿Por qué?.
 Porque estas 2 funciones cumplen responsabilidades diferentes.Y si en caso uno
 quisiera modificar cualquiera de esas funciones estariamos afectando a la clase
-Student.
+Student. Si alguna de estas dos funciones necesita ser modificada, entonces es posible que debamos modificar la clase Student en su totalidad, incluso si los otros métodos no necesitan ser modificados. 

@@ -4,7 +4,7 @@ package Solid.OCP;
 public class ScienceDistinctionDecider implements DistinctionDecider {
     public void evaluateDistinction(Estudiante estudiante){
         if(estudiante.score >80){   //corrobora que se cumpla con el puntaje mínimo
-            System.out.println(estudiante.regNumber + " ha recibido una distincion en ciencias.");
+            System.out.println(estudiante.regNumber + " ha recibido una distincion en ciencia.");
         }
     }
 }

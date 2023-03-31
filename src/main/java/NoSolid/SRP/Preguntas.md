@@ -8,9 +8,10 @@ El ID del empleado es: J848
 Este empleado es un empleado senior
 *******
 (''' Nombre del empleado: Smart,Chalito ''' )
-Este empleado tiene 3.2 años de experiencia.\n\n
-El ID del empleado es: C771\n\n
-Este empleado es un empleado junior\n\n
+(''' Este empleado tiene 3.2 años de experiencia. ''' )
+(''' El ID del empleado es: C771 ''' )
+(''' Este empleado es un empleado junior ''' )
+
 
 ### Pregunta: ¿Cuál es el problema con este diseño?
 El problema es que la clase empleado tiene 3 responsabilidades, estas no están relacionadas una con otra para cumplir

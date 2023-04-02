@@ -7,14 +7,14 @@
 
 
   ### Pregunta: ¿Ayuda escribir código polimórfico como el siguiente?.
-    ´´´java
+  ´´´java
     Impresora impresora = new ImpresoraAvanzada();
     impresora.printDocument();
     impresora.sendFax();
     impresora = new ImpresoraBasica();
     impresora.printDocument();
     // impresora.sendFax();
-    ´´´
+  ´´´
    **Explica tu respuesta.**
     
     Si ayuda pues así dejamos en evidencia que el método sendfax() no es usada por todas las clases hija de impresora,

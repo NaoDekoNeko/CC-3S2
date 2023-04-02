@@ -15,6 +15,7 @@ Este empleado es un empleado junior
 ```
 
 ### Pregunta: ¿Cuál es el problema con este diseño?
+
   El problema es que la clase empleado tiene 3 responsabilidades, estas no están relacionadas una con otra para cumplir
   con un objetivo o responsabilidad.  
   Eg: checkSeniority() y empID(), sus funciones difieren.

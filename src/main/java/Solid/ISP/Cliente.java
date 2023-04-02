@@ -8,10 +8,16 @@ public class Cliente {
         impresora.printDocument();
         impresora = new ImpresoraAvanzada();
         impresora.printDocument();
+        impresora = new ImpresoraMulti();
+        impresora.printDocument();
 
         DispositivoFax fax = new ImpresoraAvanzada();
         fax.sendFax();
+        fax = new ImpresoraMulti();
+        fax.sendFax();
 
+        Fotocopiadora fotocopiadora = new ImpresoraMulti();
+        fotocopiadora.fotocopiar();
     }
 }
 

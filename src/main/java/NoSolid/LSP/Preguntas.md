@@ -1,7 +1,8 @@
 # Principio de Sustitución de Liskov ( LSP ) NO SOLID
 ### Pregunta: Realiza una salida de muestra y describe la excepción resultante. ¿Cuál es el problema?.
 Salida :
-```*Exception in thread "main" java.lang.UnsupportedOperationException
+```
+	*Exception in thread "main" java.lang.UnsupportedOperationException
 	at NoSolid.LSP.GuestUserPayment.previousPaymentInfo(GuestUserPayment.java:10)
 	at NoSolid.LSP.PaymentHelper.showPreviousPayments(PaymentHelper.java:14)
 	at NoSolid.LSP.Cliente.main(Cliente.java:21)*

@@ -1,6 +1,7 @@
 # Principio de Sustitución de Liskov ( LSP ) SOLID
 
 ### Problema: ¿cuáles son los cambios clave?. Explica tus resultados.
+
     Un cambio clave ha sido la liberación del metodo previousPayments de los objetos de la clase
     guestUser, pues no solo no tienen registro de pagos anteriores, sino que no pueden tenerlos,
     su clase no contempla la creación de dicho registro.

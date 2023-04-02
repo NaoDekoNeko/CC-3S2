@@ -1,5 +1,5 @@
 package Solid.ISP;
 
-interface DispositivoFax {
+public interface DispositivoFax {
     void sendFax();
 }

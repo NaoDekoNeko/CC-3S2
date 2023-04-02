@@ -7,21 +7,21 @@
 
 
   ### Pregunta: ¿Ayuda escribir código polimórfico como el siguiente?.
-  ´´´java
+```java
     Impresora impresora = new ImpresoraAvanzada();
     impresora.printDocument();
     impresora.sendFax();
     impresora = new ImpresoraBasica();
     impresora.printDocument();
     // impresora.sendFax();
-  ´´´
+```
    **Explica tu respuesta.**
     
     Si ayuda pues así dejamos en evidencia que el método sendfax() no es usada por todas las clases hija de impresora,
     porque cada objeto de subclase implementa solo los métodos que necesita, sin tener que implementar métodos innecesarios.
 
    ### Pregunta: ¿Qué sucede si escribimos algo así en el código dado?
-     ´´´java
+     ```java
     List<Impresora> impresoras = new ArrayList<Impresoras>();
     impresoras.add(new ImpresoraAvanzada());
     impresoras.add(new ImpresoraBasica());
@@ -29,6 +29,6 @@
         device.printDocument();
     // device.sendFax();
     }
-    ´´´
+    ```
     Cada impresora ejecuta el método printDocument(), pero al retirar comentario, nos lanza una excepción pues
     la impresora básica no soporta el método sendFax()

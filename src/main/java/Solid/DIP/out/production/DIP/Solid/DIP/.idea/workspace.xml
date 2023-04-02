@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="8f9aabd6-7e34-4c3f-ac79-15a77d8afb52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PSQLDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfazUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfazUsuario.java" afterDir="false" />
     </list>
     <list id="ed0cce31-f33d-4439-8d83-dcd5f55f3e03" name="Changes by Computer" comment="">
-      <change beforePath="$PROJECT_DIR$/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InterfazUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/InterfazUsuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,28 +13,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Cliente.java">
-      <ranges>
-        <range start1="9" end1="10" start2="9" end2="10" changelist="8f9aabd6-7e34-4c3f-ac79-15a77d8afb52" />
-        <range start1="13" end1="13" start2="13" end2="23" changelist="ed0cce31-f33d-4439-8d83-dcd5f55f3e03" />
-        <range start1="17" end1="17" start2="27" end2="48" changelist="ed0cce31-f33d-4439-8d83-dcd5f55f3e03" />
-      </ranges>
-    </file>
     <file path="$PROJECT_DIR$/InterfazUsuario.java">
       <ranges>
-        <range start1="2" end1="4" start2="2" end2="14" changelist="8f9aabd6-7e34-4c3f-ac79-15a77d8afb52" />
-        <range start1="5" end1="5" start2="15" end2="16" changelist="ed0cce31-f33d-4439-8d83-dcd5f55f3e03" />
+        <range start1="3" end1="4" start2="3" end2="10" changelist="8f9aabd6-7e34-4c3f-ac79-15a77d8afb52" />
+        <range start1="5" end1="5" start2="11" end2="12" changelist="ed0cce31-f33d-4439-8d83-dcd5f55f3e03" />
       </ranges>
     </file>
   </component>
@@ -76,7 +56,7 @@
       <workItem from="1680455508663" duration="39000" />
       <workItem from="1680455665243" duration="284000" />
       <workItem from="1680455972320" duration="38000" />
-      <workItem from="1680456195292" duration="1471000" />
+      <workItem from="1680456195292" duration="302000" />
     </task>
     <servers />
   </component>

@@ -15,8 +15,8 @@ Este empleado es un empleado junior
 ```
 
 ### Pregunta: ¿Cuál es el problema con este diseño?
-El problema es que la clase empleado tiene 3 responsabilidades, estas no están relacionadas una con otra para cumplir
-con un objetivo o responsabilidad.
-Eg: checkSeniority() y empID(), sus funciones difieren.
-Lo que debería suceder es que la clase tenga cohesión, es decir,
-que sus métodos estén estrechamente relacionados para cumplir una determinada tarea (responsabilidad).
+  El problema es que la clase empleado tiene 3 responsabilidades, estas no están relacionadas una con otra para cumplir
+  con un objetivo o responsabilidad.  
+  Eg: checkSeniority() y empID(), sus funciones difieren.
+  Lo que debería suceder es que la clase tenga cohesión, es decir,
+  que sus métodos estén estrechamente relacionados para cumplir una determinada tarea (responsabilidad).

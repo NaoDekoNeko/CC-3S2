@@ -39,6 +39,7 @@ Un conjunto de pruebas vacío no contiene casos de prueba. Suponiendo una especi
 - Correcto
 
 # Elección de casos de prueba mediante partición
+## Ejercicio 5
 ### Supongamos que deseas dividir el espacio de entrada de esta función de raíz cuadrada:
 ```java
 /**
@@ -104,3 +105,18 @@ excluye como caso de prueba al 0 , porque al decir " x es divisible por y" y lue
 Los subdominios son correctos : Si son correctos porque no incluyen al 0 que seria un caso de error porque no se puede calcular su gdc.
 
 
+# Incluir límites en la partición
+
+## Ejercicio 7
+### Para esta función:
+```java
+/**`
+ * @param winsAndLosses una cadena de a lo más 5 de consistiendo de los caracteres 'W' o 'L'
+ * @retorna la fraccion de caracteres en winsAndLosses que son 'W'
+ */
+
+double winLossRatio(String winsAndLosses);
+```
+### ¿Cuáles son los valores límite apropiados para probar esta función?
+- El límite inferior debe ser LLLLL (5 perdidas) y el superior WWWWW (5 victorias)
+# Uso de varias particiones

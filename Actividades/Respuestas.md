@@ -120,3 +120,18 @@ double winLossRatio(String winsAndLosses);
 ### ¿Cuáles son los valores límite apropiados para probar esta función?
 - El límite inferior debe ser LLLLL (5 perdidas) y el superior WWWWW (5 victorias)
 # Uso de varias particiones
+
+# Ejercicio 8
+
+Esta partición en realidad combina varios intereses distintos: el signo de a, la magnitud de a (pequeño o grande) y los valores límite 0 y 1. Podemos pensar en estos intereses como particiones independientes. De entre las opciones a continuación, elija un subconjunto que serían particiones legales y que juntas captarían los mismos intereses.
+
+   particion en a: 0, 1
+   particion en a: 0
+   particion en a: 1
+   particion en a: 0, positivo, negativo
+   particion en a: positivo, negativo
+   particion en a: 1, !=1
+   particion en a: (donde "pequeño" encaja en long y "grande" no)
+
+
+para el interes del signo agarriamos la particion : "a: positivo, negativo",luego para los limites 0 y 1 : "a: 0, 1" ,finalmente para la magnitud de a pequeño o grande " a: (donde "pequeño" encaja en long y "grande" no)"

@@ -23,7 +23,12 @@ En la década de 1990, el vehículo de lanzamiento Ariane 5, diseñado y constru
 
 ### ¿Qué ideas demuestra esta historia?
 
-Incluso el software crítico para la seguridad de alta calidad puede tener errores residuales.
-Probar todas las entradas posibles es la mejor solución a este problema.
-El software exhibe un comportamiento discontinuo, a diferencia de muchos sistemas diseñados físicamente.
-La verificación de tipos estáticos podría haber detectado este error.
+Esta historia demuestra varias ideas importantes:
+
+- Incluso el software crítico para la seguridad de alta calidad puede tener errores residuales. Aunque el software de guía del Ariane 5 fue diseñado y construido con los más altos estándares de calidad y seguridad, un error en el cálculo de la velocidad que no se detectó causó la falla catastrófica del cohete.
+- La prueba exhaustiva de todas las entradas posibles no siempre es la mejor solución. En este caso, sería impracticable probar todas las entradas posibles debido al gran número de entradas que podría haber. En cambio, se deben tomar medidas adicionales para garantizar que el software sea robusto y pueda manejar entradas inesperadas.
+- El software puede exhibir un comportamiento discontinuo, a diferencia de muchos sistemas diseñados físicamente. A diferencia de los sistemas físicos que tienen un comportamiento continuo y predecible, el software puede comportarse de manera discontinua, lo que significa que un pequeño error en la entrada o el procesamiento puede tener un gran impacto en la salida.
+- La verificación de tipos estáticos podría haber detectado este error. Si el software hubiera sido escrito en un lenguaje de programación que proporciona verificación de tipos estáticos, como TypeScript, el error podría haber sido detectado antes de que se produjera la falla del cohete. La verificación de tipos estáticos puede ayudar a prevenir errores comunes en el software y aumentar su seguridad y confiabilidad.
+
+# Pruebas sistemáticas
+## Ejercicio 3

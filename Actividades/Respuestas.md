@@ -8,11 +8,11 @@ El resultado del primer caso de prueba sería true, ya que todos los valores en 
 
 - andAll([false, true, false, true, ..., false, true]) // 32 valores alternando entre false y true 
 
-El resultado del segundo caso de prueba sería false, ya que no todos los valores en el arreglo son true.
+El resultado del segundo caso de prueba sería false, ya que mientras se va intercalando cada valor siguiente provoca una serie de falsos hasta acabar.Debido a que si por lo menos aparece un falso las demas comparaciones "&&" seran falsas ,Eso tambien se puede concluir del programa. Es decir ni bien apresca un falso en el arreglo que manden todo sera falso.
 
 - Jessica dice que todo está OK. Pero desafortunadamente su código tiene un error off-by-one . ¿Qué expresión tiene el error?
 
-El error off-by-one en el código es que el ciclo for en el método andAll solo itera hasta i < 31, en lugar de i < bits.length. Esto significa que el último valor en el arreglo no se comprueba, lo que podría dar lugar a un resultado incorrecto.
+El error off-by-one en el código es que el ciclo for en el método andAll solo itera hasta i < 31, en lugar de i < bits.length. Esto significa que el último valor en el arreglo no se comprueba, lo que podría dar lugar a un resultado incorrecto. Ademas si se cambia el arreglo a uno de mayor tamaño tendria que estar cambiando el parametro para parar el for. Como regla general tendria que usar la sintaxis para que valla hasta el final del arreglo.
 
 - ¿Cuál podría ser el número de casos de prueba requeridos para probar esta función exhaustivamente?
 

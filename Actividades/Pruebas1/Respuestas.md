@@ -124,7 +124,7 @@ double winLossRatio(String winsAndLosses);
 # Ejercicio 8
 
 Esta partición en realidad combina varios intereses distintos: el signo de a, la magnitud de a (pequeño o grande) y los valores límite 0 y 1. Podemos pensar en estos intereses como particiones independientes. De entre las opciones a continuación, elija un subconjunto que serían particiones legales y que juntas captarían los mismos intereses.
-
+```
    particion en a: 0, 1
    particion en a: 0
    particion en a: 1
@@ -132,6 +132,24 @@ Esta partición en realidad combina varios intereses distintos: el signo de a, l
    particion en a: positivo, negativo
    particion en a: 1, !=1
    particion en a: (donde "pequeño" encaja en long y "grande" no)
-
+```
 
 para el interes del signo agarriamos la particion : "a: positivo, negativo",luego para los limites 0 y 1 : "a: 0, 1" ,finalmente para la magnitud de a pequeño o grande " a: (donde "pequeño" encaja en long y "grande" no)"
+
+# Ejercicio 9
+
+Supongamos que usamos estas tres particiones de a en su lugar:
+```
+// particion en a: 0, positivo, negativo
+// particion en a: 1, !=1
+// particion on a: donde "pequeño" encaja en long y "grande" no)
+```
+### Si solo queremos cubrir cada subdominio de las tres particiones, ¿cuántos valores diferentes de a necesitaríamos?.
+
+
+>Para la partición 1, que tiene 3 subdominios (0, positivo, negativo), necesitaríamos al menos 3 valores diferentes de "a" para cubrir cada subdominio.
+>Para la partición 2, que tiene 2 subdominios (1, !=1), necesitaríamos al menos 2 valores diferentes de "a" para cubrir cada subdominio.
+>Para la partición 3, que tiene 1 subdominio (donde "pequeño" encaja en long y "grande" no), necesitaríamos al menos 1 valor de "a" que cumpla con esta condición.
+
+En total, necesitaríamos al menos 3 + 2 + 1 = 6 valores diferentes de "a" para cubrir todos los subdominios de las tres particiones propuestas.
+

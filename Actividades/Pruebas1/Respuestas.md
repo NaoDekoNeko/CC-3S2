@@ -153,3 +153,22 @@ Supongamos que usamos estas tres particiones de a en su lugar:
 
 En total, necesitaríamos al menos 3 + 2 + 1 = 6 valores diferentes de "a" para cubrir todos los subdominios de las tres particiones propuestas.
 
+## Ejercicio 10
+
+### A veces es conveniente pensar y escribir una partición de espacio de entrada en términos de la salida de la función, porque las variaciones en el comportamiento pueden ser más visibles allí. Por ejemplo:
+```
+// particion en a.multiply(b): 0, positivo, negativo
+``` 
+### es la abreviatura de la partición de tres subdominios que consta de:
+```
+ { (a,b) | a.multiply(b) = 0 }
+ { (a,b) | a.multiply(b) > 0 }
+ { (a,b) | a.multiply(b) < 0 }
+```
+### Con este enfoque, ¿cuántos casos de prueba se necesitan para cubrir las siguientes tres particiones?
+```
+// particion en a: 0, positivo, negativo
+// particion en b: 0, positive, negativo
+// particion en a.multiply(b): 0, positivo, negativo
+```
+- negativo x negativo, positivo x positivo, negativo x positivo, positivo x negativo, 0 x negativo, 0 x positivo, negativo x 0, positivo x 0, 0 x 0. Dejandonos 9 casos.

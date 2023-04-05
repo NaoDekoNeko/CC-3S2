@@ -32,3 +32,26 @@ Esta historia demuestra varias ideas importantes:
 
 # Pruebas sistemáticas
 ## Ejercicio 3
+Un conjunto de pruebas es correcto si:
+- Todos sus casos de prueba pasan cuando se ejecutan en una implementación legal
+## Ejercicio 4
+Un conjunto de pruebas vacío no contiene casos de prueba. Suponiendo una especificación no trivial, un conjunto de pruebas vacío es:
+- Correcto
+
+# Elección de casos de prueba mediante partición
+### Supongamos que deseas dividir el espacio de entrada de esta función de raíz cuadrada:
+```java
+/**
+ * @param x debe ser no negativo
+ * @retorna la raiz cuadrada de x
+ */
+public static int sqrt(int x)
+```
+
+### Evalúe la calidad de cada una de las siguientes particiones candidatas. ¿Son los subdominios propuestos separados y completos, formando así una partición? ¿Son correctos, en el sentido de que cada subdominio puede ser cubierto por un caso de prueba legal? Para una buena partición debes marcar las tres alternativas.
+```
+// particion: x < 0; x >= 0
+```
+- Los subdominios son disjuntos: SI
+- Los subdominios están completos: SI
+- Los subdominios son correctos: NO, pues también toma en cuenta los double o float

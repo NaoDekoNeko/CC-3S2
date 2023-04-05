@@ -67,3 +67,40 @@ public static int sqrt(int x)
 - Los subdominios son disjuntos: SI
 - Los subdominios están completos: NO, son casos específicos
 - Los subdominios son correctos: NO
+
+
+# Ejercicio 6 
+```
+ Evalúa cada una de las siguientes particiones candidatas para gcd.
+
+-Los subdominios son disjuntos : 
+-Los subdominios están completos :
+-Los subdominios son correctos :
+```
+>// particion: x es divisible por y; y es divisible por x; x e y son primeros relativos
+Si x e y no pueden ser 0 quiere decir que su gcd puede ser muchos valores
+si son numeros primos entre si su gdc sera 1.
+
+Los subdominios son disjuntos : ahora si los subdominios son disjuntos es decir x e y van a tomar valores
+diferentes no restringe nada debido a que pueden ser diferentes pero tener un divisor en comun.
+
+Los subdominios están completos : si los subdominios estan completos entonces x e y toman todos los valores excepto el 0 obiamente por la particion entonces de la misma manera el gdc puede ser cualquier divisor mayor que tengan ambos en comun
+
+
+Los subdominios son correctos : Si son correctos entonces cubre la condicion que ambos no pueden ser 0 debido a que
+el gdc minimo es 1, no hay divisor 0.
+
+>// particion: x es divisible por y; y es divisible por x; x e y son primos relativos
+Si x es divisible por y entonces y es candidato a gdc 
+de la misma forma si y es divisible por x
+
+
+Los subdominios son disjuntos: No necesariamente son disjuntos porque puede existir x = y lo que hace que
+ya no sea disjuntos
+
+Los subdominios están completos : No esta completo porque no toma todos los casos es decir en la particion 
+excluye como caso de prueba al 0 , porque al decir " x es divisible por y" y luego " y es divisible por x" descarga automaticamente que x e y sean 0.
+
+Los subdominios son correctos : Si son correctos porque no incluyen al 0 que seria un caso de error porque no se puede calcular su gdc.
+
+

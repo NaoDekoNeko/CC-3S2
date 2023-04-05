@@ -54,4 +54,16 @@ public static int sqrt(int x)
 ```
 - Los subdominios son disjuntos: SI
 - Los subdominios están completos: SI
-- Los subdominios son correctos: NO, pues también toma en cuenta los double o float
+- Los subdominios son correctos: SI
+```
+// particion: x es un cuadrado perfecto; x es > 0 pero no es un cuadrado perfecto
+```
+- Los subdominios son disjuntos: SI
+- Los subdominios están completos: NO, no toma en cuenta el 0
+- Los subdominios son correctos: NO
+```
+// particion: x=0, x=1, x=7, x=16
+```
+- Los subdominios son disjuntos: SI
+- Los subdominios están completos: NO, son casos específicos
+- Los subdominios son correctos: NO

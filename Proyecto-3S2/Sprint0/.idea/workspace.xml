@@ -1,40 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a052d5-430a-4d93-9214-3fc1941f4882" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6b83fcf7-5465-45ea-ad71-3c8d66a668ef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../SOS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SOS/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="2O3m89eQdLcCK4wXm34wgmMgfCR" />
+  <component name="ProjectId" id="2O3ulddebxq55C2S6bU6qNu0gER" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Ademar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -42,12 +29,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e7a052d5-430a-4d93-9214-3fc1941f4882" name="Changes" comment="" />
-      <created>1680797482507</created>
+      <changelist id="6b83fcf7-5465-45ea-ad71-3c8d66a668ef" name="Changes" comment="" />
+      <created>1680801741605</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680797482507</updated>
-      <workItem from="1680797483032" duration="2068000" />
+      <updated>1680801741605</updated>
+      <workItem from="1680801744832" duration="27000" />
     </task>
     <servers />
   </component>

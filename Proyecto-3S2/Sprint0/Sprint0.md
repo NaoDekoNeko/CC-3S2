@@ -88,7 +88,7 @@ namespace Sprint0
     }
 }
 ```
-![Test Rojo](TestRojo.png)
+![Test Rojo](./Imagenes/TestRojo.png)
 
 ### Test en verde
 #### Distancia.cs
@@ -105,13 +105,13 @@ namespace Sprint0
     }
 }
 ```
-![Test Verde](TestVerde.png)
+![Test Verde](./Imagenes/TestVerde.png)
 
 ## 3. Programación
 ### GUI sin especificar decimales
-![GUI default](GUI_Default.png)
+![GUI default](./Imagenes/GUI_Default.png)
 ### GUI con 3 decimales
-![GUI 3 decimales](GUI_3_decimales.png)
+![GUI 3 decimales](./Imagenes/GUI_3_decimales.png)
 ### Código fuente
 #### Form1.cs
 ```C#

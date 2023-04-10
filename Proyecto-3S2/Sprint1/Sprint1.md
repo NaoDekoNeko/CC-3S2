@@ -77,13 +77,6 @@
             <th>Estatus (completado, por hacer, en progreso) </th>
         </tr>
         <tr>
-            <td align="center">1. Escoge un tamaño de tablero</td>
-            <td align="center">1.1 </td>
-            <td align="center">AC 1.1 "Tamaño es número entero": <b>Dado </b>un número n <b>Cuando</b> el jugador lo ingrese <b>Entonces</b> se valida que sea un número entero
- </td>
-            <td align="center"> Por hacer</td>
-        </tr>
-        <tr>
             <td align="center">5. Un juego simple ha terminado</td>
             <td align="center">5.1
 </td>

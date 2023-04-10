@@ -109,7 +109,7 @@ namespace Sprint0
 
 ## 3. Programación
 ### GUI sin especificar decimales
-![GUI default](GUI_default.png)
+![GUI default](GUI_Default.png)
 ### GUI con 3 decimales
 ![GUI 3 decimales](GUI_3_decimales.png)
 ### Código fuente

@@ -1,7 +1,7 @@
 # Sprint 0
 
 ## 1. Decisiones claves para el proyecto SOS 
-| Necesidad | Decision |
+|  | Decision |
 | -------- | -------- |
 | Lenguaje de programación orientado a objetos | C# |
 |Librería GUI  (recomendable) |	Windows Forms |

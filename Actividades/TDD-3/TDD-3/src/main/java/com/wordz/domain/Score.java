@@ -1,9 +1,5 @@
 package com.wordz.domain;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Score {
     private final String correct;
     private Letter resultado = Letter.INCORRECT;
@@ -22,6 +18,8 @@ public class Score {
             resultado = Letter.CORRECT;
         }
     }
+    //esto ayuda al codigo de llamada, es una mejor forma de comentar
+    //desde el nombre de la funcion nos especifica su responsabilidad
     private boolean isCorrectLetter(String attempt){
         return correct.charAt(position) == attempt.
                 charAt(position);

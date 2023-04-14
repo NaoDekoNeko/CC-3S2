@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.prueba.test.DistanciasAnalyzer" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-06T18:45:42" hostname="DESKTOP-AF45CCE" time="0.124">
+  <properties/>
+  <testcase name="Origen()" classname="com.prueba.test.DistanciasAnalyzer" time="0.093"/>
+  <testcase name="SegundoCuadrante()" classname="com.prueba.test.DistanciasAnalyzer" time="0.002"/>
+  <testcase name="CuartoCuadrante()" classname="com.prueba.test.DistanciasAnalyzer" time="0.005"/>
+  <testcase name="PrimerCuadrante()" classname="com.prueba.test.DistanciasAnalyzer" time="0.002"/>
+  <testcase name="TercerCuadrante()" classname="com.prueba.test.DistanciasAnalyzer" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -19,6 +19,7 @@ namespace ReSOSgame
             InitializeComponent();
             tablero = new Tablero((int)numericUpDown1.Value);
             SetContentPane();
+            juego = SelectorJuego();
         }
         public readonly static int CANVAS_WIDTH = 400;
         public readonly static int CANVAS_HEIGHT = 400;
@@ -27,7 +28,8 @@ namespace ReSOSgame
         public readonly static int X = 180;
         public readonly static int Y = 60;
         private GameBoardCanvas gameBoardCanvas;
-        private Tablero tablero; //= new Tablero(1);
+        private Tablero tablero;
+        private Juego juego;
         private void SetContentPane()
         {
             gameBoardCanvas = new GameBoardCanvas((int)numericUpDown1.Value);
@@ -82,7 +84,20 @@ namespace ReSOSgame
         private void SeleccionarTamanioTablero(object sender, EventArgs e)
         {
             tablero = new Tablero((int)numericUpDown1.Value);
-            SetContentPane();            
+            SetContentPane();
+            juego = SelectorJuego();
+        }
+
+        private Juego SelectorJuego()
+        {
+            if(radioButton5.Checked)
+            {
+                return new JuegoSimple(Tablero);
+            }
+            else
+            {
+                return new JuegoGeneral(tablero);
+            }
         }
     }
 }

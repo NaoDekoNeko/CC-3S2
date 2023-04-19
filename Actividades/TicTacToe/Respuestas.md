@@ -1,3 +1,4 @@
+# ACTIVIDAD TIC-TAC-TOE
 # Sprint 1
 
 Considera la primera historia: como jugador, necesito un tablero vacío de 3 x 3 para comenzar un juego de TicTacToe.
@@ -73,6 +74,9 @@ public class Console {
 ```
 
 ```java
+//nos regresa un valor:
+//-1 si es una casilla fuera de los límites
+//el valor de la casilla si es una casilla válida
 public int getCell(int row, int column){
        if(row >= 0 && row < 3 && column >= 0 && column < 3)
            return grid[row][column]; 
@@ -128,7 +132,25 @@ Cuando  el jugador X hace un movimiento ilegal fuera del tablero
 Entonces no se cambia la celda
 Y no se cambia el turno
 ```
-
+```
+AC 3.1 Un movimiento O válido
+Dado un juego en curso con el turno de O 
+Cuando el jugador O hace un movimiento válido
+Entonces se coloca O en la celda
+Y el turno se cambia a X 
+```
+```
+AC 3.2 Un movimiento O ilegal en una celda ocupada 
+Dado un juego en curso con el turno de O 
+Cuando el jugador O hace un movimiento ilegal dentro del tablero 
+Entonces no se cambia la celda Y no se cambia el turno  
+```
+```
+ AC 3.3 Un movimiento O ilegal fuera del tablero 
+ Dado un juego en curso con el turno de O 
+ Cuando el jugador O hace un movimiento ilegal fuera del tablero 
+ Entonces la celda no se cambia.
+```
 ### Después de la refactorización, continuamos midiendo la cobertura de código de Board y revisando los estilos de codificación.
 
 ![image](imagenes/Coverage_Sprint_2_1.png)
@@ -138,7 +160,7 @@ Al igual que en los casos anteriores, solo no se toman en consideracion los caso
 # Sprint 3
 ### Pregunta (V/F) La secuencia de cuatro movimientos, X (0,0), O (1,1), X (0,1), O (1,0) no cumple la necesidad.
 ```
-No la cumple pues ni X ni O hacen un movimiento ganador (completar  OOO o XXX)
+F: No la cumple pues ni X ni O hacen un movimiento ganador (completar  OOO o XXX)
 ```
 
 ### Pregunta: Para hacer que testXWon pase, updateGameState se enfoca en los escenarios CROSS_WON. Indica al menos tres pruebas para AC4.1 para cubrir tres X seguidas de manera horizontal, vertical y diagonal.

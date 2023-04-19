@@ -29,7 +29,7 @@ public class Calculadora {
         return Math.sqrt(a);
     }
 
-    public double potencia(float a, float b) {
+    public double potencia(double a, double b) {
         return Math.pow(a,b);
     }
 }

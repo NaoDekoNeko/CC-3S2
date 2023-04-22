@@ -59,6 +59,7 @@ namespace ReSOSgame
                 Graphics g = e.Graphics;
                 DrawGrid(g,tamanio,tamanio,GRID_WIDTH, Color.Black);
             }
+            // Delinean lineas horizontales y verticales del tablero
             private void DrawGrid(Graphics g, int numRows, int numCols, int lineWidth, Color lineColor)
             {
                 // Calcular el ancho y alto de cada celda de la grid
@@ -80,6 +81,7 @@ namespace ReSOSgame
                 }
             }
         }
+        // Al ir cambiando  el "" se va cambiando el tamaño del tablero
 
         private void SeleccionarTamanioTablero(object sender, EventArgs e)
         {
@@ -87,7 +89,7 @@ namespace ReSOSgame
             SetContentPane();
             juego = SelectorJuego();
         }
-
+        // Retorna el tipo de juego segun el radio button seleccionado
         private Juego SelectorJuego()
         {
             if(radioButton5.Checked)
@@ -98,6 +100,11 @@ namespace ReSOSgame
             {
                 return new JuegoGeneral(tablero);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

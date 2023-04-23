@@ -4,6 +4,6 @@ y los sprints
 
 ## Alumnos Grupo 1
 
-- Ademar Fatama 20192148F
+- Ademar Fatama 20192148F -> Repo personal
 
 - Gabriel Barrientos 20192174G

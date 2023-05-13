@@ -1,5 +1,7 @@
 package shapes;
 
 public interface Shape {
-   // Completa
+    //String getType();
+    void draw(Graphics g);
+
 }

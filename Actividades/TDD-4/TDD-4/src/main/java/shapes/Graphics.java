@@ -1,5 +1,6 @@
 package shapes;
 
 public interface Graphics {
-    // Completa
+    void drawText(String text);
+    void drawHorizontalLine(int width);
 }

@@ -16,7 +16,6 @@ public class ConsoleGraphics implements Graphics {
 
         print(rowText.toString());
     }
-
     private void print(String text) {
         System.out.println(text);
     }

@@ -8,7 +8,6 @@ public class Calculadora {
     public boolean getStatus(){
         return status;
     }
-
     public double addition(double a, double b) {
         return a+b;
     }

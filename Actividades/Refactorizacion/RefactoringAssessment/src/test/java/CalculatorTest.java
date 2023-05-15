@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
     private static Calculadora calculadora;
+
     @BeforeAll
     public static void init(){
         calculadora = new Calculadora();

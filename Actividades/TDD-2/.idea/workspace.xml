@@ -5,13 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1edcbac9-4bf7-4897-8d21-59fd95f66e35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/wordz/domain/Username.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/wordz/domain/UsernameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TDD-2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Refactorizacion/RefactoringAssessment/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TDD-3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TDD-3/.idea/TDD-3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TDD-3/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TDD-3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TDD-3/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TDD-3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TDD-3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TDD-3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/NOLSP/FreeMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/NOLSP/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/NOLSP/MembersDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/NOLSP/PremiumMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/Pregunta1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/SLP/FreeMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/SLP/IEveryone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/SLP/IPremium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/SLP/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/SLP/MembersDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta1/src/main/java/Pregunta1/SLP/PremiumMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/src/main/java/TicTacToe/TicTacToe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/src/main/java/sprintX_autoplay/AutoTicTacToe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/src/main/java/sprintX_autoplay/TicTacToeConsole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/src/main/java/sprintX_autoplay/TicTacToeGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/src/main/java/sprintX_autoplay/TicTacToeGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/src/test/java/Requisito1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/src/test/java/Requisito2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ExamenParcial-3S2/Pregunta2/src/test/java/Requisito3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoverPruebaCasa/src/test/java/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoverPruebaCasa/src/test/java/unitTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Refactorizacion/RefactoringAssessment/src/main/java/Calculator/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Refactorizacion/RefactoringAssessment/src/main/java/Calculator/Calculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Refactorizacion/RefactoringAssessment/src/test/java/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Refactorizacion/RefactoringAssessment/src/test/java/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wordz/domain/WordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/wordz/domain/WordTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TDD-3/TDD-3/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../TDD-3/TDD-3/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TDD-3/TDD-3/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../TDD-3/TDD-3/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TDD-3/TDD-3/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../TDD-3/TDD-3/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,6 +69,8 @@
       <change beforePath="$PROJECT_DIR$/../TDD-3/TDD-3/build/reports/tests/test/packages/com.wordz.domain.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TDD-3/TDD-3/build/reports/tests/test/packages/com.wordz.domain.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TDD-3/TDD-3/build/test-results/test/TEST-com.wordz.domain.WordTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TDD-3/TDD-3/build/test-results/test/TEST-com.wordz.domain.WordTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TDD-3/TDD-3/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../TDD-3/TDD-3/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Template/src/main/java/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Template/src/main/java/Calculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Template/src/test/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Template/src/test/java/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TicTacToe/TictocToe/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/TictocToe/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,21 +98,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ademar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ademar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.wordz.domain" />
@@ -138,6 +188,10 @@
       <workItem from="1681092997851" duration="4000" />
       <workItem from="1684015662499" duration="84000" />
       <workItem from="1684015980919" duration="2728000" />
+      <workItem from="1684099242225" duration="741000" />
+      <workItem from="1684103788724" duration="76000" />
+      <workItem from="1684166932458" duration="772000" />
+      <workItem from="1684167935363" duration="1207000" />
     </task>
     <servers />
   </component>

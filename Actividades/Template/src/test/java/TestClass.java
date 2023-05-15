@@ -6,6 +6,6 @@ public class TestClass {
     public void Test1(){
         var calc = new Calculadora();
         var resultado = calc.suma(10,15);
-        assertThat(resultado).isEqualTo(15);
+        assertThat(resultado).isEqualTo(25);
     }
 }

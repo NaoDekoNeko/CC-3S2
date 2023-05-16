@@ -17,7 +17,7 @@ Método vacío
 
 Implemento el método:
 
-```csharp
+```C#
 public override void Jugar(int row, int col)
 {
 throw new Exception();
@@ -32,7 +32,7 @@ Corro los test:
 
 Modifico el código:
 
-```csharp
+```C#
 public override void Jugar(int row, int col)
         {
             if (row < 1 || row > tablero.Tamanio || col < 1 || col > tablero.Tamanio)
@@ -50,7 +50,7 @@ Test otra vez
 
 Se ha modificado el método para que se necesite ingresar S u O como parámetro, mas no el funcionamiento interno
 
-```csharp
+```C#
 public override void Jugar(int row, int col, Cell ficha)
         {
             if (row < 1 || row > tablero.Tamanio || col < 1 || col > tablero.Tamanio)
@@ -64,7 +64,7 @@ public override void Jugar(int row, int col, Cell ficha)
 
 Modificamos el método
 
-```csharp
+```C#
 public override void Jugar(int row, int col, Cell ficha)
         {
             if (row < 1 || row > tablero.Tamanio || col < 1 || col > tablero.Tamanio)
@@ -80,7 +80,7 @@ public override void Jugar(int row, int col, Cell ficha)
 
 Y dentro de tablero se ha modificado el método GetCell
 
-```csharp
+```C#
 public Cell GetCell(int row , int column)
         {
             int rowAux = row - 1;
@@ -100,7 +100,7 @@ Con estos cambios, el test pasa
 
 Separando los métodos:
 
-```csharp
+```C#
 private void ComprobarMov(int row, int col)
         {
             if (row < 1 || row > tablero.Tamanio || col < 1 || col > tablero.Tamanio)
@@ -128,7 +128,7 @@ Las pruebas siguen pasando con esta refactorización:
 
 Se va a esperar que el primer movimiento lo haga el AZUL, pero la propiedad siempre devolverá ROJO, por lo que va a fallar. (Dentro de la clase Tablero)
 
-```csharp
+```C#
 public Jugador Turno { get { return Jugador.ROJO; }
             set { turno = value; }}
 ```
@@ -137,14 +137,14 @@ public Jugador Turno { get { return Jugador.ROJO; }
 
 Arreglando la property para que devuelva el turno:
 
-```csharp
+```C#
 public Jugador Turno { get { return turno; }
             set { turno = value; }}
 ```
 
 Y haciendo que, al iniciar el tablero se asigne el primer turno al AZUL:
 
-```csharp
+```C#
 public void InitBoard()
         {
             for(int row = 0; row < tamanio; row++)
@@ -170,7 +170,7 @@ Falla porque no hay cambio de turno
 
 Implementamos el cambio de turno dentro del método Jugar
 
-```csharp
+```C#
 public override void Jugar(int row, int col, Cell ficha)
         {
             ComprobarMov(row,col);
@@ -192,7 +192,7 @@ Ahora pasa el test
 
 Implementamos:
 
-```csharp
+```C#
 public override bool HayGanador()
         {
            return true;
@@ -215,7 +215,7 @@ Falla
 
 Implementamos el método
 
-```csharp
+```C#
 public override bool PuntoHorizontal()
         {
             for (int i = 0; i < tablero.Tamanio; i++)
@@ -242,7 +242,7 @@ Y ahora el test pasa
 
 Implementamos el método
 
-```csharp
+```C#
 public override bool PuntoVertical()
         {
             for (int i = 0; i < tablero.Tamanio; i++)
@@ -273,7 +273,7 @@ Falla en ambas diagonales
 
 Implementamos los métodos:
 
-```csharp
+```C#
 public override bool PuntoDiagIzq()
         {
             for (int i = 0; i < tablero.Tamanio-2; i++)
@@ -315,7 +315,7 @@ Pasa los test
 
 Implementamos el método:
 
-```csharp
+```C#
 public override bool TableroLLeno()
         {
             for (int i = 0; i < tablero.Tamanio; i++)
@@ -342,7 +342,7 @@ Ahora los test pasan
 
 Implementar el método:
 
-```csharp
+```C#
 public override bool Win(int row, int col, Cell ficha)
         {
             if (ficha == Cell.S)

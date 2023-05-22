@@ -24,19 +24,39 @@ public class NumberUtils {
      */
     public static List<Integer> add(List<Integer> left, List<Integer> right) {
         // Si alguno es null, devuelve null
-
-
+        if (left == null || right == null)
+            return null;
         // invierta los números para que el dígito menos significativo vaya a la izquierda.
+        Collections.reverse(left);
+        Collections.reverse(right);
 
+        LinkedList<Integer> result = new LinkedList<>();
+        int aumento = 0;
 
         // mientras haya un dígito, sigue sumando si hay desplazamiento,
+        for (int i = 0; i < Math.max(left.size(), right.size()); i++) {
 
+            int leftDigit = left.size() > i ? left.get(i) : 0;
+            int rightDigit = right.size() > i ? right.get(i) : 0;
 
+            if (leftDigit < 0 || leftDigit > 9 || rightDigit < 0 ||  rightDigit > 9)
+                throw new IllegalArgumentException();
+
+            int sum = leftDigit + rightDigit + aumento;
+
+            result.addFirst(sum % 10);
+            aumento = sum / 10;
+        }
 
         // si hay algún desplazamiento sobrante, agréguelo al número final
-
-
+        if (aumento > 0)
+            result.addFirst(aumento);
         // elimina los ceros iniciales del resultado
-        return null;
+        while (result.size() > 1 && result.get(0) == 0)
+            result.remove(0);
+        return result;
     }
 }
+
+// Ejercicio ¿Funciona el código anterior para las siguientes expresiones?
+// T1 = [1] + [1] = [2]

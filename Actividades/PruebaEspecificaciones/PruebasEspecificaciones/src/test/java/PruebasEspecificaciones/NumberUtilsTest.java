@@ -118,14 +118,24 @@ public class NumberUtilsTest {
 
     static Stream<Arguments> digitsOutOfRange() {
         return Stream.of(
-               // completa
+                of(numbers(1,-1,1), numbers(1)),
+                of(numbers(1), numbers(1,-1,1)),
+                of(numbers(1,11,1), numbers(1)),
+                of(numbers(1), numbers(1,11,1))
         );
     }
 
     // devuelve una lista mutable de enteros
     private static List<Integer> numbers(int... nums) {
-       // completa
-        return null;
-    }
 
+        // completa
+        //return null;
+
+        List<Integer> list = new ArrayList<>();
+        for(int n : nums)
+            list.add(n);
+        return list;
+    }
 }
+//Imagenes de coverage están en la carpeta de screenshots, ponlas en el markdown
+//Falta probar cuando haya 0000 a la izquierda, pero de forma paramétrica

@@ -1,5 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Ademar\AppData\Local\Temp\JetBrains\ReSharperPlatformVs17\vAny_bf04ef54\CoverageData\_Pregunta3.1258798743\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\Ademar\AppData\Local\Temp\JetBrains\ReSharperPlatformVs17\vAny_bf04ef54\CoverageData\_Pregunta3.1897106532\Snapshot\snapshot.utdcvr</s:String>
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ec4e5834_002D47fe_002D4bac_002D8e7f_002D173646f1880b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;UnitTest1&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-3S2\UnitTest1" Presentation="&amp;lt;UnitTest1&amp;gt;" /&gt;&#xD;
+  &lt;Project Location="C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-CC3S2\Pregunta3\UnitTest1" Presentation="&amp;lt;UnitTest1&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

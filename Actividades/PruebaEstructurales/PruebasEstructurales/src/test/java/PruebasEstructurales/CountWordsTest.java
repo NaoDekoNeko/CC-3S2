@@ -24,6 +24,11 @@ class CountWordsTest {
         assertThat(words).isEqualTo(2);
     }
 
+    @Test
+    void wordsThatEndsWithR() {
+        assertThat(new CountWords().count("letter writter")).isEqualTo(2);
+    }
+
     //Fuera de la actividad
     /*
     @Test

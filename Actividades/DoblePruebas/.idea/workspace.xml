@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9819998-33d3-4b12-8571-8a341464a152" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Caso-Refact-Py/Caso-Refactorizacion.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Caso-Refact-Py/Caso-Refactorizacion.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caso-Refact-Py/datastats.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Caso-Refact-Py/datastats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Caso-Refact-Py/test_datastats.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Caso-Refact-Py/test_datastats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/.vs/Pregunta3/FileContentIndex/13377cbc-3398-4621-bb8c-e1582a08be0f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/.vs/Pregunta3/FileContentIndex/16c56265-dc9d-417b-858c-54a4028159dd.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/.vs/Pregunta3/FileContentIndex/ab9a89bf-5c4e-435e-ba1a-286eaa301285.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/.vs/Pregunta3/FileContentIndex/f8c0eb9e-152c-49e2-97fc-ca735480de6b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/.vs/Pregunta3/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/.vs/Pregunta3/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/.vs/Pregunta3/v17/TestStore/0/005.testlog" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/.vs/Pregunta3/v17/TestStore/0/005.testlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/bin/Debug/Pregunta3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/bin/Debug/Pregunta3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/bin/Debug/Pregunta3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/bin/Debug/Pregunta3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/obj/Debug/Pregunta3.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/obj/Debug/Pregunta3.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/obj/Debug/Pregunta3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/obj/Debug/Pregunta3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/obj/Debug/Pregunta3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/obj/Debug/Pregunta3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/MSTest.TestAdapter.2.2.10.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/Microsoft.TestPlatform.AdapterUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/Microsoft.VisualStudio.TestPlatform.TestFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/cs/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/cs/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/cs/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/de/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/de/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/de/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/de/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/de/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/es/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/es/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/es/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/fr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/fr/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/fr/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/it/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/it/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/it/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/it/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/it/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ja/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ja/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ja/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ko/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ko/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ko/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pl/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pl/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pl/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pt-BR/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pt-BR/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pt-BR/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ru/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ru/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ru/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/tr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/tr/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/tr/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hans/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hant/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/_common/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/MSTest.TestAdapter.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/MSTest.TestAdapter.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/Microsoft.TestPlatform.AdapterUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/cs/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/de/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/es/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/fr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/it/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/ja/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/ko/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/pl/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/pt-BR/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/ru/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/tr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/zh-Hans/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net45/zh-Hant/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/MSTest.TestAdapter.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/MSTest.TestAdapter.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/Microsoft.TestPlatform.AdapterUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/cs/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/de/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/es/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/fr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/it/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/ja/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/ko/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/pl/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/pt-BR/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/ru/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/tr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/zh-Hans/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net46/zh-Hant/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/MSTest.TestAdapter.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/MSTest.TestAdapter.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/Microsoft.TestPlatform.AdapterUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/cs/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/de/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/es/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/fr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/it/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/ja/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/ko/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/pl/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/pt-BR/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/ru/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/tr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/winui/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/zh-Hans/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/net5.0/zh-Hant/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/MSTest.TestAdapter.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/Microsoft.TestPlatform.AdapterUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/cs/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/de/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/es/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/fr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/it/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/ja/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/ko/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/pl/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/pt-BR/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/ru/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/tr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/zh-Hans/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netcoreapp1.0/zh-Hant/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/MSTest.TestAdapter.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/Microsoft.TestPlatform.AdapterUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/cs/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/de/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/es/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/fr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/it/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/ja/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/ko/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/pl/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/pt-BR/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/ru/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/tr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/zh-Hans/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/netstandard1.5/zh-Hant/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/MSTest.TestAdapter.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/MSTest.TestAdapter.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/Microsoft.TestPlatform.AdapterUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/cs/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/de/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/es/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/fr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/it/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/ja/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/ko/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/pl/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/pt-BR/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/ru/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/tr/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/zh-Hans/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestAdapter.2.2.10/build/uap10.0/zh-Hant/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/MSTest.TestFramework.2.2.10.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/MSTest.TestFramework.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/winui/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/winui/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/build/net5.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/Microsoft.VisualStudio.TestPlatform.TestFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net45/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/Microsoft.VisualStudio.TestPlatform.TestFramework.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/net5.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/netstandard1.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/Microsoft.VisualStudio.TestPlatform.TestFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/cs/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/de/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/es/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/fr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/it/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/ja/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/ko/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/pl/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/pt-BR/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/ru/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/tr/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/Pregunta3/packages/MSTest.TestFramework.2.2.10/lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/UnitTest1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/UnitTest1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.TestPlatform.AdapterUtilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.TestPlatform.AdapterUtilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Pregunta3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Pregunta3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Pregunta3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/Pregunta3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/UnitTest1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/UnitTest1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/UnitTest1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/UnitTest1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.TestPlatform.AdapterUtilities.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.TestPlatform.AdapterUtilities.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/bin/Debug/es/Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/obj/Debug/UnitTest1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenParcial-CC3S2/Pregunta3/UnitTest1/packages.config" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="wordz" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2QkNjr96HO4oAzDTd5n8vvFnsgj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "ademar",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/home/clara/IdeaProjects/DoblePruebas",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ejemplos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.LanzamientoDadosTest">
+    <configuration name="DiceRollTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ejemplos.DiceRollTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="LanzamientoDadosTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;LanzamientoDadosTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="LanzamientoDadosTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ejemplos.LanzamientoDadosTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="MailSendedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ejemplos.MailSendedTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="WelcomeEmailTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ejemplos.WelcomeEmailTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.LanzamientoDadosTest" />
+        <item itemvalue="Gradle.MailSendedTest" />
+        <item itemvalue="Gradle.LanzamientoDadosTest (1)" />
+        <item itemvalue="Gradle.DiceRollTest" />
+        <item itemvalue="Gradle.WelcomeEmailTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9819998-33d3-4b12-8571-8a341464a152" name="Changes" comment="" />
+      <created>1685893766841</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685893766841</updated>
+      <workItem from="1685893767157" duration="203000" />
+      <workItem from="1685895207721" duration="759000" />
+      <workItem from="1685896048083" duration="5703000" />
+      <workItem from="1685978591020" duration="5272000" />
+      <workItem from="1685986399737" duration="727000" />
+      <workItem from="1686142606191" duration="310000" />
+      <workItem from="1686142940867" duration="1009000" />
+      <workItem from="1686143984123" duration="548000" />
+      <workItem from="1686144838210" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

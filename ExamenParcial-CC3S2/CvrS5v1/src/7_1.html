@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Users\Ademar\OneDrive\Desktop\Practica1-C3S2\Sprint5\ReSOSgame\ReSOSgame\Player.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+using System;
+using static ReSOSgame.Tablero;
+
+namespace ReSOSgame
+{
+    public abstract class Player
+    {
+        public Player(Jugador player)
+        {
+            Jugador = player;
+            X = -1;
+            Y = -1;
+        }
+
+        public int X { get;protected set; }
+
+        public int Y { get; protected set; }
+
+        public Jugador Jugador { get; }
+
+        public Cell Ficha { get; set; }
+
+        public abstract void MakeMove(int row, int col, Cell _ficha, Game game);
+    }
+
+    public class Human : Player
+    {
+        public Human(Jugador player) : base(player)
+        {
+        }
+
+        public override void MakeMove(int row, int col, Cell _ficha, Game game)
+        {
+            game.MakeMove(row, col, _ficha);
+            if (game.tablero.ValidMove)
+            {
+                Ficha = _ficha;
+                X = row;
+                Y = col;
+            }
+            else
+            {
+                X = -1;
+                Y = -1;
+            }
+        }
+    }
+
+    public class Computer : Player
+    {
+        public Computer(Jugador player) : base(player)
+        {
+        }
+
+        public override void MakeMove(int row, int col, Cell _ficha, Game game)
+        {
+            var numberOfEmptyCells = GetNumberOfEmptyCells(game);
+            var random = new Random();
+            var targetMove = random.Next(numberOfEmptyCells);
+            var index = 0;
+            for (var i = 0; i &lt; game.tablero.Tamanio; ++i)
+            for (var j = 0; j &lt; game.tablero.Tamanio; ++j)
+                if (game.tablero.GetCell(i, j) == 0)
+                {
+                    if (targetMove == index)
+                    {
+                        //Relleno la ficha , cordenadax y cordenada y del player para que lo pinte
+                        Ficha = (Cell)(random.Next(2) + 2);
+                        X = i;
+                        Y = j;
+                        game.MakeMove(i, j, Ficha);
+                        Console.WriteLine(&quot;Movimiento de la computadora:&quot;);
+                        Console.WriteLine(&quot;Casilla: [{0}, {1}]&quot;, i, j);
+                        Console.WriteLine(&quot;Valor de ficha: {0}&quot;, _ficha);
+
+                        return;
+                    }
+
+                    index++;
+                }
+        }
+
+        private static int GetNumberOfEmptyCells(Game game)
+        {
+            var numberOfEmptyCells = 0;
+            for (var row = 0; row &lt; game.tablero.Tamanio; ++row)
+            for (var col = 0; col &lt; game.tablero.Tamanio; ++col)
+                if (game.tablero.GetCell(row, col) == Cell.VACIA)
+                    numberOfEmptyCells++;
+            return numberOfEmptyCells;
+        }
+    }
+}
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[8,9,8,38,1],[9,9,9,10,1],[10,13,10,30,1],[11,13,11,20,1],[12,13,12,20,1],[13,9,13,10,1],[15,28,15,42,1],[19,34,19,38,1],[21,29,21,33,1],[21,34,21,38,1],[28,40,28,52,1],[29,9,29,10,1],[30,9,30,10,1],[33,9,33,10,0],[34,13,34,45,0],[35,13,35,40,0],[36,13,36,14,0],[37,17,37,32,0],[38,17,38,25,0],[39,17,39,25,0],[40,13,40,14,0],[42,13,42,14,0],[43,17,43,24,0],[44,17,44,24,0],[45,13,45,14,0],[46,9,46,10,0],[51,43,51,55,1],[52,9,52,10,1],[53,9,53,10,1],[56,9,56,10,0],[57,13,57,66,0],[58,13,58,39,0],[59,13,59,62,0],[60,13,60,27,0],[61,18,61,27,0],[61,29,61,53,0],[61,55,61,58,0],[62,18,62,27,0],[62,29,62,53,0],[62,55,62,58,0],[63,17,63,53,0],[64,17,64,18,0],[65,21,65,45,0],[66,21,66,22,0],[68,25,68,60,0],[69,25,69,31,0],[70,25,70,31,0],[71,25,71,52,0],[72,25,72,76,0],[73,25,73,72,0],[74,25,74,74,0],[76,25,76,32,0],[79,21,79,29,0],[80,17,80,18,0],[81,9,81,10,0],[84,9,84,10,0],[85,13,85,40,0],[86,18,86,29,0],[86,31,86,57,0],[86,59,86,64,0],[87,18,87,29,0],[87,31,87,57,0],[87,59,87,64,0],[88,17,88,66,0],[89,21,89,42,0],[90,13,90,39,0],[91,9,91,10,0]]);
+    </script>
+  </body>
+</html>

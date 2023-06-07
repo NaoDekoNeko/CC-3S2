@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Users\Ademar\OneDrive\Desktop\Practica1-C3S2\Sprint5\ReSOSgame\PruebasSOSgame\UnitTest1.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ReSOSgame;
+
+namespace PruebasSOSgame
+// HU :Historia de Usuario
+{
+    [TestClass] // Clase de Codigo de Prueba HU.1
+    public class TestEmptyBoard
+    {
+        private static readonly int PreferredSize = 7;
+
+        private readonly Tablero tablero = new Tablero(PreferredSize);
+
+        //Criterio de aceptacion 1.1
+        [TestMethod]
+        public void NewTablero()
+        {
+            // Refactorizable - Comprueba que todas las celdas del tablero est&#233;n vac&#237;as
+            for (var row = 0; row &lt; tablero.Tamanio; row++)
+            for (var column = 0; column &lt; tablero.Tamanio; column++)
+                Assert.AreEqual(tablero.GetCell(row, column), Tablero.Cell.VACIA);
+            // Esto podria ser otro criterio de aceptacion no manual ni automatico
+            // Assert.AreEqual(tablero.Ficha, &#39;S&#39;);
+            // Assert.AreEqual(tablero.Jugador, &quot;Azul&quot;);
+        }
+    }
+
+    [TestClass] // Clase de Codigo de Prueba HU.2
+    public class TestSelectorModeGame
+    {
+        private readonly Tablero tablero = new Tablero(6);
+
+        //Criterio de aceptacion 2.1
+        [TestMethod]
+        public void SelectSimpleGameMode()
+        {
+            SimpleGame simpleGame;
+            simpleGame = new SimpleGame(tablero);
+            Assert.IsTrue(simpleGame is SimpleGame);
+        }
+
+        //Criterio de aceptacion 2.2
+        [TestMethod]
+        public void SelectGeneralGameMode()
+        {
+            GeneralGame generalGame;
+            generalGame = new GeneralGame(tablero);
+            Assert.IsTrue(generalGame is GeneralGame);
+        }
+    }
+
+    [TestClass] // Clase de Codigo de Prueba HU.3
+    public class TestShowGameState
+    {
+        private readonly Tablero tablero = new Tablero(6);
+
+        //Criterio de aceptacion 3.1
+        [TestMethod]
+        public void ShowGameState()
+        {
+            tablero.InitBoard();
+            Assert.AreEqual(Tablero.GameState.JUGANDO, tablero.EstadoDeJuego);
+        }
+    }
+
+    [TestClass] // Clase de Codigo de Prueba HU.4
+    public class TestMakeMoveSimple
+    {
+        private Game game;
+        private Player player1, player2;
+        private Tablero tablero;
+
+        [TestInitialize]
+        public void Init()
+        {
+            tablero = new Tablero(3);
+            game = new SimpleGame(tablero);
+            player1 = new Human(Tablero.Jugador.JAZUL);
+            player2 = new Human(Tablero.Jugador.JROJO);
+            tablero.InitBoard();
+        }
+
+        [TestCleanup]
+        public void Teardown()
+        {
+        }
+
+        //Criterio de aceptacion 4.1
+        [TestMethod]
+        public void MakeBlueMoveS_SimpleGame()
+        {
+            player1.MakeMove(1, 1, Tablero.Cell.S, game);
+            Assert.AreEqual(Tablero.Cell.S, tablero.GetCell(1, 1));
+            Assert.AreEqual(Tablero.Jugador.JROJO, tablero.Turno);
+        }
+
+        //Criterio de aceptacion 4.2
+        [TestMethod]
+        public void MakeRedMoveO_SimpleGame()
+        {
+            game.MakeMove(0, 0, Tablero.Cell.S);
+            game.MakeMove(2, 2, Tablero.Cell.O);
+            Assert.AreEqual(Tablero.Cell.O, tablero.GetCell(2, 2));
+            Assert.AreEqual(Tablero.Jugador.JAZUL, tablero.Turno);
+        }
+    }
+
+    [TestClass] // Clase de Codigo de Prueba HU.5
+    public class TestSimpleGameVictory
+    {
+        private SimpleGame game;
+        private Tablero tablero;
+
+        [TestInitialize]
+        public void Init()
+        {
+            tablero = new Tablero(3);
+            game = new SimpleGame(tablero);
+            tablero.InitBoard();
+        }
+
+        [TestCleanup]
+        public void Teardown()
+        {
+        }
+
+        //Criterio de aceptacion 5.1
+        [TestMethod]
+        public void VictorybluePlayerWithS()
+        {
+            game.MakeMove(0, 0, Tablero.Cell.S);
+            game.MakeMove(0, 1, Tablero.Cell.O);
+            game.MakeMove(1, 1, Tablero.Cell.O);
+            game.MakeMove(0, 2, Tablero.Cell.O);
+            game.MakeMove(2, 2, Tablero.Cell.S);
+            new Consola(tablero).DisplayBoard();
+            Assert.AreEqual(Tablero.Jugador.JAZUL, tablero.Turno);
+            Assert.AreEqual(Tablero.Cell.S, tablero.Ficha);
+            Assert.AreEqual(Tablero.GameState.GANOAZUL, tablero.EstadoDeJuego);
+        }
+
+        //Criterio de aceptacion 5.2
+        [TestMethod]
+        public void VictoryRedPlayerWithO()
+        {
+            game.MakeMove(0, 0, Tablero.Cell.S);
+            game.MakeMove(0, 2, Tablero.Cell.S);
+            game.MakeMove(2, 2, Tablero.Cell.S);
+            game.MakeMove(0, 1, Tablero.Cell.O);
+            new Consola(tablero).DisplayBoard();
+            Assert.AreEqual(Tablero.Jugador.JROJO, tablero.Turno);
+            Assert.AreEqual(Tablero.Cell.O, tablero.Ficha);
+            Assert.AreEqual(Tablero.GameState.GANOROJO, tablero.EstadoDeJuego);
+        }
+    }
+
+    [TestClass] // Clase de Codigo de Prueba HU.6
+    public class TestMakeMoveGeneral
+    {
+        private Game game;
+        private Tablero tablero;
+
+        [TestInitialize]
+        public void Init()
+        {
+            tablero = new Tablero(3);
+            game = new GeneralGame(tablero);
+            tablero.InitBoard();
+        }
+
+        [TestCleanup]
+        public void Teardown()
+        {
+        }
+
+        [TestMethod] //Criterio de aceptacion 6.1
+        public void MakeBlueMoveO_GeneralGame()
+        {
+            game.MakeMove(0, 2, Tablero.Cell.O);
+            Assert.AreEqual(Tablero.Cell.O, tablero.GetCell(0, 2));
+            Assert.AreEqual(Tablero.Jugador.JROJO, tablero.Turno);
+        }
+
+        [TestMethod] //Criterio de aceptacion 6.2
+        public void MakeRedMoveS_GeneralGame()
+        {
+            game.MakeMove(0, 0, Tablero.Cell.O);
+            game.MakeMove(2, 2, Tablero.Cell.S);
+            Assert.AreEqual(Tablero.Cell.S, tablero.GetCell(2, 2));
+            Assert.AreEqual(Tablero.Jugador.JAZUL, tablero.Turno);
+        }
+    }
+
+    [TestClass] // Clase de Codigo de Prueba HU.7
+    public class TestGeneralGameVictory
+    {
+        private GeneralGame game;
+        private Tablero tablero;
+
+        [TestInitialize]
+        public void Init()
+        {
+            tablero = new Tablero(3);
+            game = new GeneralGame(tablero);
+            tablero.InitBoard();
+        }
+
+        [TestCleanup]
+        public void Teardown()
+        {
+        }
+
+        //Criterio de aceptacion 7.1
+        [TestMethod]
+        public void FullBoard()
+        {
+            var rd = new Random();
+            int n;
+            for (var i = 0; i &lt; tablero.Tamanio; i++)
+            for (var j = 0; j &lt; tablero.Tamanio; j++)
+            {
+                n = rd.Next(100);
+                if (n % 2 == 0)
+                    game.MakeMove(i, j, Tablero.Cell.S);
+                else
+                    game.MakeMove(i, j, Tablero.Cell.O);
+            }
+
+            new Consola(tablero).DisplayBoard();
+            Assert.IsTrue(game.validator.FullBoard());
+        }
+
+        //Criterio de aceptacion 7.2
+        [TestMethod]
+        public void VictoryFullboardBlue()
+        {
+            game.MakeMove(0, 0, Tablero.Cell.S);
+            ImprimirTest();
+            game.MakeMove(1, 1, Tablero.Cell.O);
+            ImprimirTest();
+            game.MakeMove(2, 2, Tablero.Cell.S);
+            ImprimirTest();
+            game.MakeMove(1, 0, Tablero.Cell.S);
+            ImprimirTest();
+            game.MakeMove(0, 1, Tablero.Cell.S);
+            ImprimirTest();
+            game.MakeMove(1, 2, Tablero.Cell.O);
+            ImprimirTest();
+            game.MakeMove(2, 1, Tablero.Cell.O);
+            ImprimirTest();
+            game.MakeMove(0, 2, Tablero.Cell.O);
+            ImprimirTest();
+            game.MakeMove(2, 0, Tablero.Cell.S);
+            ImprimirTest();
+            Assert.AreEqual(Tablero.GameState.GANOAZUL, tablero.EstadoDeJuego);
+        }
+
+        public void ImprimirTest()
+        {
+            new Consola(tablero).DisplayBoard();
+            Console.WriteLine(&quot;Puntaje Azul: &quot; + game.PuntajeAzul);
+            Console.WriteLine(&quot;Puntaje Rojo: &quot; + game.PuntajeRojo);
+        }
+
+        //Criterio de aceptacion 7.3
+        [TestMethod]
+        public void VictoryFullboardRed()
+        {
+            game.MakeMove(0, 0, Tablero.Cell.S);
+            game.MakeMove(0, 1, Tablero.Cell.S);
+            game.MakeMove(0, 2, Tablero.Cell.S);
+            game.MakeMove(1, 0, Tablero.Cell.O);
+            game.MakeMove(1, 1, Tablero.Cell.S);
+            game.MakeMove(1, 2, Tablero.Cell.S);
+            game.MakeMove(2, 1, Tablero.Cell.S);
+            game.MakeMove(2, 0, Tablero.Cell.S);
+            game.MakeMove(2, 2, Tablero.Cell.O);
+            new Consola(tablero).DisplayBoard();
+            Assert.AreEqual(Tablero.GameState.GANOROJO, tablero.EstadoDeJuego);
+        }
+
+        //Criterio de aceptacion 7.4
+        [TestMethod]
+        public void DrawFullBoardS()
+        {
+            for (var i = 0; i &lt; tablero.Tamanio; i++)
+            for (var j = 0; j &lt; tablero.Tamanio; j++)
+                game.MakeMove(i, j, Tablero.Cell.S);
+            new Consola(tablero).DisplayBoard();
+            Assert.AreEqual(Tablero.GameState.EMPATE, tablero.EstadoDeJuego);
+        }
+    }
+
+    [TestClass] // Clase de Codigo de Prueba HU.8
+    public class TestSelectTypePlayer
+    {
+        private readonly Player player1 = new Computer(Tablero.Jugador.JAZUL);
+
+        private readonly Player player2 = new Computer(Tablero.Jugador.JROJO);
+
+        //Criterio de aceptacion 8.1
+        [TestMethod]
+        public void SelectBlueComputerPlayer()
+        {
+            Assert.IsTrue(player1 is Computer);
+            Assert.AreEqual(player1.Jugador, Tablero.Jugador.JAZUL);
+        }
+
+        //Criterio de aceptacion 8.2
+        [TestMethod]
+        public void SelectRedComputerPlayer()
+        {
+            Assert.IsTrue(player2 is Computer);
+            Assert.AreEqual(player2.Jugador, Tablero.Jugador.JROJO);
+        }
+    }
+
+    [TestClass] //Clase de Codigo de Prueba HU.9
+    public class TestPlayAgainstComputer
+    {
+        private Controller controller;
+
+        [TestInitialize]
+        public void Init()
+        {
+            controller = new Controller();
+            controller.Board = new Tablero(3);
+            controller.Game = new SimpleGame(controller.Board);
+        }
+
+        //Criterio de aceptacion 9.1
+        [TestMethod]
+        public void ComputerMakesFirstMove()
+        {
+            controller.Player1 = new Computer(Tablero.Jugador.JAZUL);
+            controller.Player2 = new Human(Tablero.Jugador.JROJO);
+            controller.InitTurn();
+            controller.Player1.MakeMove(0, 0, Tablero.Cell.S, controller.Game);
+            Assert.IsTrue(controller.CurrentPlayer is Computer);
+            Assert.IsTrue(controller.Board.ValidMove);
+            controller.ChangeTurn(); // hace el cambio de turno
+            Assert.IsTrue(controller.CurrentPlayer is Human); // valida que se ha hecho el cambio de turno
+            new Consola(controller.Board).DisplayBoard();
+        }
+
+        //Criterio de aceptacion 9.2
+        [TestMethod]
+        public void ComputerMakesSecondMove()
+        {
+            controller.Player1 = new Human(Tablero.Jugador.JAZUL);
+            controller.Player2 = new Computer(Tablero.Jugador.JROJO);
+            controller.InitTurn();
+            controller.Player1.MakeMove(0, 0, Tablero.Cell.S, controller.Game);
+            controller.ChangeTurn();
+            Assert.IsTrue(controller.CurrentPlayer is Computer);
+            controller.Player2.MakeMove(0, 0, Tablero.Cell.S, controller.Game);
+            controller.ChangeTurn();
+            Assert.IsTrue(controller.CurrentPlayer is Human);
+            new Consola(controller.Board).DisplayBoard();
+        }
+
+        //Criterio de aceptacion 9.3
+        //Termina cuando haya ganador o empate
+        [TestMethod]
+        public void ComputerVsComputer()
+        {
+            controller.Player1 = new Computer(Tablero.Jugador.JAZUL);
+            controller.Player2 = new Computer(Tablero.Jugador.JROJO);
+            while (controller.Board.EstadoDeJuego == Tablero.GameState.JUGANDO)
+            {
+                controller.Player1.MakeMove(0, 0, Tablero.Cell.S, controller.Game);
+                controller.Player2.MakeMove(0, 0, Tablero.Cell.O, controller.Game);
+            }
+
+            new Consola(controller.Board).DisplayBoard();
+            Assert.IsTrue(controller.Board.EstadoDeJuego != Tablero.GameState.JUGANDO);
+        }
+    }
+}
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[11,9,11,55,1],[13,9,13,71,1],[18,9,18,10,1],[20,18,20,29,1],[20,31,20,52,1],[20,54,20,59,1],[21,18,21,32,1],[21,34,21,58,1],[21,60,21,68,1],[22,17,22,83,1],[26,9,26,10,1],[32,9,32,59,1],[37,9,37,10,1],[39,13,39,50,0],[40,13,40,53,0],[41,9,41,10,1],[46,9,46,10,1],[48,13,48,52,0],[49,13,49,55,0],[50,9,50,10,1],[56,9,56,59,1],[61,9,61,10,1],[62,13,62,33,1],[63,13,63,79,1],[64,9,64,10,1],[76,9,76,10,1],[77,13,77,38,1],[78,13,78,44,0],[79,13,79,56,1],[80,13,80,56,1],[81,13,81,33,1],[82,9,82,10,1],[86,9,86,10,1],[87,9,87,10,1],[92,9,92,10,1],[93,13,93,58,0],[94,13,94,68,1],[95,13,95,67,1],[96,9,96,10,1],[101,9,101,10,1],[102,13,102,49,0],[103,13,103,49,0],[104,13,104,68,1],[105,13,105,67,1],[106,9,106,10,1],[117,9,117,10,1],[118,13,118,38,1],[119,13,119,44,0],[120,13,120,33,1],[121,9,121,10,1],[125,9,125,10,1],[126,9,126,10,1],[131,9,131,10,1],[132,13,132,49,1],[133,13,133,49,0],[134,13,134,49,0],[135,13,135,49,0],[136,13,136,49,0],[137,13,137,49,0],[138,13,138,67,1],[139,13,139,60,1],[140,13,140,80,1],[141,9,141,10,1],[146,9,146,10,1],[147,13,147,49,1],[148,13,148,49,0],[149,13,149,49,0],[150,13,150,49,0],[151,13,151,49,0],[152,13,152,67,1],[153,13,153,60,1],[154,13,154,80,1],[155,9,155,10,1],[166,9,166,10,1],[167,13,167,38,1],[168,13,168,45,0],[169,13,169,33,1],[170,9,170,10,1],[174,9,174,10,1],[175,9,175,10,1],[179,9,179,10,1],[180,13,180,49,0],[181,13,181,68,1],[182,13,182,67,1],[183,9,183,10,1],[187,9,187,10,1],[188,13,188,49,0],[189,13,189,49,0],[190,13,190,68,1],[191,13,191,67,1],[192,9,192,10,1],[203,9,203,10,1],[204,13,204,38,1],[205,13,205,45,0],[206,13,206,33,1],[207,9,207,10,1],[211,9,211,10,1],[212,9,212,10,1],[217,9,217,10,1],[218,13,218,35,1],[220,18,220,27,1],[220,29,220,48,1],[220,50,220,53,1],[221,18,221,27,1],[221,29,221,48,1],[221,50,221,53,1],[222,13,222,14,1],[223,17,223,34,1],[224,17,224,32,1],[225,21,225,57,0],[227,21,227,57,0],[228,13,228,14,1],[230,13,230,49,1],[231,13,231,55,0],[232,9,232,10,1],[237,9,237,10,1],[238,13,238,49,0],[239,13,239,28,1],[240,13,240,49,0],[241,13,241,28,1],[242,13,242,49,0],[243,13,243,28,1],[244,13,244,49,0],[245,13,245,28,1],[246,13,246,49,0],[247,13,247,28,1],[248,13,248,49,0],[249,13,249,28,1],[250,13,250,49,0],[251,13,251,28,1],[252,13,252,49,0],[253,13,253,28,1],[254,13,254,49,0],[255,13,255,28,1],[256,13,256,80,1],[257,9,257,10,1],[260,9,260,10,1],[261,13,261,49,1],[262,13,262,68,0],[263,13,263,68,0],[264,9,264,10,1],[269,9,269,10,1],[270,13,270,49,1],[271,13,271,49,0],[272,13,272,49,0],[273,13,273,49,0],[274,13,274,49,0],[275,13,275,49,0],[276,13,276,49,0],[277,13,277,49,0],[278,13,278,49,0],[279,13,279,49,0],[280,13,280,80,1],[281,9,281,10,1],[286,9,286,10,1],[287,18,287,27,1],[287,29,287,48,1],[287,50,287,53,1],[288,18,288,27,1],[288,29,288,48,1],[288,50,288,53,1],[289,17,289,53,0],[290,13,290,49,1],[291,13,291,78,1],[292,9,292,10,1],[298,9,298,79,1],[300,9,300,79,1],[305,9,305,10,1],[306,13,306,48,1],[307,13,307,69,1],[308,9,308,10,1],[313,9,313,10,1],[314,13,314,48,1],[315,13,315,69,1],[316,9,316,10,1],[326,9,326,10,1],[327,13,327,43,1],[328,13,328,47,1],[329,13,329,64,0],[330,9,330,10,1],[335,9,335,10,1],[336,13,336,70,1],[337,13,337,67,1],[338,13,338,35,1],[339,13,339,80,1],[340,13,340,65,1],[341,13,341,55,1],[342,13,342,37,1],[343,13,343,62,1],[344,13,344,58,1],[345,9,345,10,1],[350,9,350,10,1],[351,13,351,67,1],[352,13,352,70,1],[353,13,353,35,1],[354,13,354,80,1],[355,13,355,37,1],[356,13,356,65,1],[357,13,357,80,1],[358,13,358,37,1],[359,13,359,62,1],[360,13,360,58,1],[361,9,361,10,1],[367,9,367,10,1],[368,13,368,70,1],[369,13,369,70,1],[370,13,370,80,1],[371,13,371,14,1],[372,17,372,84,1],[373,17,373,84,1],[374,13,374,14,1],[376,13,376,58,1],[377,13,377,88,1],[378,9,378,10,1]]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Users\Ademar\OneDrive\Desktop\Practica1-C3S2\Sprint5\ReSOSgame\ReSOSgame\ScoreValidator.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+using static ReSOSgame.Tablero;
+
+namespace ReSOSgame
+{
+    public class ScoreValidator
+    {
+        private readonly Tablero tablero;
+
+        public ScoreValidator(Tablero tablero)
+        {
+            this.tablero = tablero;
+        }
+
+        // Funcion booleana que verifica si el tablero esta lleno
+        public bool FullBoard()
+        {
+            for (var i = 0; i &lt; tablero.Tamanio; i++)
+            for (var j = 0; j &lt; tablero.Tamanio; j++)
+                if (tablero.GetCell(i, j) == Cell.VACIA)
+                    return false;
+            return true;
+        }
+
+        public bool HasOnePoint(int row, int col, Cell ficha)
+        {
+            if (ficha == Cell.S)
+                return (tablero.GetCell(row + 1, col + 1) == Cell.O &amp;&amp; tablero.GetCell(row + 2, col + 2) == Cell.S) ||
+                       (tablero.GetCell(row - 1, col - 1) == Cell.O &amp;&amp; tablero.GetCell(row - 2, col - 2) == Cell.S) ||
+                       (tablero.GetCell(row, col + 1) == Cell.O &amp;&amp; tablero.GetCell(row, col + 2) == Cell.S) ||
+                       (tablero.GetCell(row, col - 1) == Cell.O &amp;&amp; tablero.GetCell(row, col - 2) == Cell.S) ||
+                       (tablero.GetCell(row + 1, col) == Cell.O &amp;&amp; tablero.GetCell(row + 2, col) == Cell.S) ||
+                       (tablero.GetCell(row - 1, col) == Cell.O &amp;&amp; tablero.GetCell(row - 2, col) == Cell.S);
+            if (ficha == Cell.O)
+                return (tablero.GetCell(row - 1, col - 1) == Cell.S &amp;&amp; tablero.GetCell(row + 1, col + 1) == Cell.S) ||
+                       (tablero.GetCell(row + 1, col - 1) == Cell.S &amp;&amp; tablero.GetCell(row - 1, col + 1) == Cell.S) ||
+                       (tablero.GetCell(row - 1, col) == Cell.S &amp;&amp; tablero.GetCell(row + 1, col) == Cell.S) ||
+                       (tablero.GetCell(row, col - 1) == Cell.S &amp;&amp; tablero.GetCell(row, col + 1) == Cell.S);
+            return false;
+        }
+
+        // Funcion que verifica si el game se ha terminado
+        public bool GameOver()
+        {
+            return tablero.EstadoDeJuego != GameState.JUGANDO;
+        }
+
+        // Funcion que verifica si algunos de los dos jugadores ha ganado
+        public bool HasWon()
+        {
+            return tablero.EstadoDeJuego == GameState.GANOAZUL ||
+                   tablero.EstadoDeJuego == GameState.GANOROJO;
+        }
+    }
+}
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[9,9,9,47,1],[10,9,10,10,1],[11,13,11,36,1],[12,9,12,10,1],[16,9,16,10,1],[17,18,17,27,1],[17,29,17,48,1],[17,50,17,53,1],[18,18,18,27,1],[18,29,18,48,1],[18,50,18,53,1],[19,17,19,57,1],[20,21,20,34,1],[21,13,21,25,1],[22,9,22,10,1],[25,9,25,10,1],[26,13,26,33,1],[27,17,32,109,1],[33,13,33,33,1],[34,17,37,109,1],[38,13,38,26,0],[39,9,39,10,1],[43,9,43,10,1],[44,13,44,63,1],[45,9,45,10,1],[49,9,49,10,0],[50,13,51,64,0],[52,9,52,10,0]]);
+    </script>
+  </body>
+</html>

@@ -6,3 +6,11 @@ C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-3S2\Pregunta3\bin\Debug\Pr
 C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-3S2\Pregunta3\bin\Debug\Pregunta3.pdb
 C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-3S2\Pregunta3\obj\Debug\Pregunta3.exe
 C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-3S2\Pregunta3\obj\Debug\Pregunta3.pdb
+C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-CC3S2\Pregunta3\Pregunta3\bin\Debug\Pregunta3.exe.config
+C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-CC3S2\Pregunta3\Pregunta3\bin\Debug\Pregunta3.exe
+C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-CC3S2\Pregunta3\Pregunta3\bin\Debug\Pregunta3.pdb
+C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-CC3S2\Pregunta3\Pregunta3\obj\Debug\Pregunta3.csproj.AssemblyReference.cache
+C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-CC3S2\Pregunta3\Pregunta3\obj\Debug\Pregunta3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-CC3S2\Pregunta3\Pregunta3\obj\Debug\Pregunta3.csproj.CoreCompileInputs.cache
+C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-CC3S2\Pregunta3\Pregunta3\obj\Debug\Pregunta3.exe
+C:\Users\Ademar\OneDrive\Desktop\CC-3S2\ExamenParcial-CC3S2\Pregunta3\Pregunta3\obj\Debug\Pregunta3.pdb

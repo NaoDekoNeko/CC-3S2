@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Users\Ademar\OneDrive\Desktop\Practica1-C3S2\Sprint5\ReSOSgame\ReSOSgame\Controller.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+namespace ReSOSgame
+{
+    public class Controller
+    {
+        public Board Board { get; set; }
+
+        public Game Game { get; set; }
+
+        public Player Player1 { get; set; }
+
+        public Player Player2 { get; set; }
+
+        public Player CurrentPlayer
+        {
+            get =&gt; Board.CurrentPlayer;
+            set =&gt; Board.CurrentPlayer = value;
+        }
+
+        public Board.Jugador Turn =&gt; Board.Turn;
+
+        public Board.Cell Ficha =&gt; CurrentPlayer.Ficha;
+
+        public int X =&gt; CurrentPlayer.X;
+        public int Y =&gt; CurrentPlayer.Y;
+        public int Tamanio =&gt; Board.Tamanio;
+
+        public void InitTurn()
+        {
+            // Nota: Antes de usar el init turn debe haberse inicializado el player1
+            CurrentPlayer = Player1;
+        }
+
+        public void ChangeTurn()
+        {
+            CurrentPlayer = Board.Turn == Board.Jugador.JAZUL ? Player1 : Player2;
+        }
+    }
+}
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[5,30,5,34,1],[5,35,5,39,1],[7,28,7,32,1],[7,33,7,37,1],[9,33,9,37,1],[9,38,9,42,1],[11,33,11,37,1],[11,38,11,42,1],[15,20,15,39,1],[16,20,16,47,1],[19,38,19,48,0],[21,36,21,55,0],[23,25,23,40,0],[24,25,24,40,0],[25,31,25,44,0],[28,9,28,10,1],[30,13,30,37,1],[31,9,31,10,1],[34,9,34,10,1],[35,13,35,83,1],[36,9,36,10,1]]);
+    </script>
+  </body>
+</html>

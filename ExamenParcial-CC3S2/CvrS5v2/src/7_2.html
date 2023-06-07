@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Users\Ademar\OneDrive\Desktop\Practica1-C3S2\Sprint5\ReSOSgame\ReSOSgame\ScoreValidator.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+using static ReSOSgame.Board;
+
+namespace ReSOSgame
+{
+    public class ScoreValidator
+    {
+        private readonly Board board;
+
+        public ScoreValidator(Board board)
+        {
+            this.board = board;
+        }
+
+        // Funcion booleana que verifica si el board esta lleno
+        public bool FullBoard()
+        {
+            for (var i = 0; i &lt; board.Tamanio; i++)
+            for (var j = 0; j &lt; board.Tamanio; j++)
+                if (board.GetCell(i, j) == Cell.VACIA)
+                    return false;
+            return true;
+        }
+
+        public bool HasOnePoint(int row, int col, Cell ficha)
+        {
+            switch (ficha)
+            {
+                case Cell.S:
+                    return (board.GetCell(row + 1, col + 1) == Cell.O &amp;&amp; board.GetCell(row + 2, col + 2) == Cell.S) ||
+                           (board.GetCell(row - 1, col - 1) == Cell.O &amp;&amp; board.GetCell(row - 2, col - 2) == Cell.S) ||
+                           (board.GetCell(row, col + 1) == Cell.O &amp;&amp; board.GetCell(row, col + 2) == Cell.S) ||
+                           (board.GetCell(row, col - 1) == Cell.O &amp;&amp; board.GetCell(row, col - 2) == Cell.S) ||
+                           (board.GetCell(row + 1, col) == Cell.O &amp;&amp; board.GetCell(row + 2, col) == Cell.S) ||
+                           (board.GetCell(row - 1, col) == Cell.O &amp;&amp; board.GetCell(row - 2, col) == Cell.S);
+                case Cell.O:
+                    return (board.GetCell(row - 1, col - 1) == Cell.S &amp;&amp; board.GetCell(row + 1, col + 1) == Cell.S) ||
+                           (board.GetCell(row + 1, col - 1) == Cell.S &amp;&amp; board.GetCell(row - 1, col + 1) == Cell.S) ||
+                           (board.GetCell(row - 1, col) == Cell.S &amp;&amp; board.GetCell(row + 1, col) == Cell.S) ||
+                           (board.GetCell(row, col - 1) == Cell.S &amp;&amp; board.GetCell(row, col + 1) == Cell.S);
+                case Cell.VACIA:
+                case Cell.INVALIDA:
+                default:
+                    return false;
+            }
+        }
+
+        // Funcion que verifica si el game se ha terminado
+        public bool GameOver()
+        {
+            return board.EstadoDeJuego != GameState.JUGANDO;
+        }
+    }
+}
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[9,9,9,43,1],[10,9,10,10,1],[11,13,11,32,1],[12,9,12,10,1],[16,9,16,10,1],[17,18,17,27,1],[17,29,17,46,1],[17,48,17,51,1],[18,18,18,27,1],[18,29,18,46,1],[18,48,18,51,1],[19,17,19,55,1],[20,21,20,34,1],[21,13,21,25,1],[22,9,22,10,1],[25,9,25,10,1],[26,13,26,27,0],[29,21,34,109,0],[36,21,39,109,0],[43,21,43,34,0],[45,9,45,10,1],[49,9,49,10,1],[50,13,50,61,1],[51,9,51,10,1]]);
+    </script>
+  </body>
+</html>

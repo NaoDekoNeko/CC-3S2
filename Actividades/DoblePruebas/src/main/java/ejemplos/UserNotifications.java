@@ -1,15 +1,22 @@
 package ejemplos;
 
 public class UserNotifications{
+
     private final MailServer mailServer;
-    String actualRecipiente = "test@example.com";
-    String actualTema = "Bienvenido!";
-    String actualTexto = "Bienvenido a tu cuenta";
+
     public UserNotifications(MailServer mailServer) {
         this.mailServer = mailServer;
     }
-
-    public void welcomeNewUser() {
-        mailServer.sendEmail(actualRecipiente,actualTema,actualTexto);
+    /*
+    public void welcomeNewUser(String mail) {
     }
+     */
+    public void welcomeNewUser(String email) {
+        try {
+            mailServer.sendEmail(email, "Bienvenido!", "Bienvenido a tu cuenta");
+        } catch (IllegalArgumentException e) {
+            throw new NotificationFailureException("not-an-email-address");
+        }
+    }
+
 }

@@ -1,7 +1,7 @@
 package ejemplos;
 
 public class UserProfiles {
-    public String fetchNicknameFor(UserId id) {
-        return "emp" + id.getId();
+    public Object fetchNicknameFor(UserId id) {
+        return null;
     }
 }

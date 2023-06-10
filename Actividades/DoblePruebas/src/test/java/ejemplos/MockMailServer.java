@@ -4,9 +4,9 @@ import ejemplos.MailServer;
 
 public class MockMailServer implements MailServer {
      boolean fueLlamado;
-     String actualRecipiente = "test@example.com";
-     String actualTema = "Bienvenido!";
-    String actualTexto = "Bienvenido a tu cuenta";
+     String actualRecipiente;
+     String actualTema;
+    String actualTexto;
     @Override
     public void sendEmail(String recipiente, String tema,
                       	String texto) {

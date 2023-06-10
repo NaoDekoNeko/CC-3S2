@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ejemplos.WelcomeEmailTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-06-10T15:21:45" hostname="DESKTOP-AF45CCE" time="0.106">
+  <properties/>
+  <testcase name="sendsWelcomeEmail()" classname="ejemplos.WelcomeEmailTest" time="0.071"/>
+  <testcase name="rejectsInvalidEmailRecipient()" classname="ejemplos.WelcomeEmailTest" time="0.031"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

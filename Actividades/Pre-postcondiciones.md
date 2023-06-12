@@ -1,6 +1,6 @@
 ## Curso de desarrollo de software
 
-Inicia un repositorio llamado CC-3S2 y dentro una carpeta llamada Actividades. Dentro de esta carpeta abre una carpeta llamada Pre-postcondiciones y coloca todas tus respuestas.
+Inicia un repositorio llamado CC-3S2 y dentro construye una carpeta llamada Actividades. Dentro de esta carpeta inicia una carpeta llamada Pre-postcondiciones y coloca todas tus respuestas.
 
 Esta actividad es individual.
 
@@ -13,8 +13,7 @@ Aquí nos enfocamos en métodos y constructores en programas orientados a objeto
 Las **precondiciones** de un método (o constructor) se refieren a las restricciones en la entrada del método y los estados de todos los objetos relacionados que deben cumplirse antes de llamar al método. 
 Involucra los parámetros explícitos del método, parámetros implícitos (por ejemplo, variables de instancia en la misma clase) y variables globales. 
 
-La **postcondición** de un método se refiere a las restricciones en la salida del método y los estados de todos los objetos relacionados que el método garantiza cuando regresa. 
-
+La **postcondición** de un método se refiere a las restricciones en la salida del método y los estados de todos los objetos relacionados que el método garantiza cuando retorna. 
 
 La precondición P y la postcondición Q de un método M se pueden representar mediante la fórmula de corrección `{P}M{Q}` también conocida como triples de Hoare. 
 
@@ -35,22 +34,19 @@ Se pueden especificar como comentarios en el código fuente y/o como parte de la
 
 También pueden codificarse como aserciones ejecutables en el código fuente que expresan condiciones de corrección. 
 
-La violación en tiempo de ejecución de una aserción de precondición o postcondición terminaría la ejecución del programa. Indica una falla inesperada. Es diferente del manejo de excepciones. 
+La violación en tiempo de ejecución de una aserción de precondición o postcondición terminaría la ejecución del programa. Indica una falla inesperada. 
 
-Este último se ocupa de las condiciones (por ejemplo, datos de entrada incorrectos) que se espera que ocurran. 
+Es diferente del manejo de excepciones.  Esto último se ocupa de las condiciones (por ejemplo, datos de entrada incorrectos) que se espera que ocurran. 
 
 #### Precondiciones asumidas frente a precondiciones validadas 
 
-Hay dos opciones para manejar la precondición de un método: la precondición asumida y la precondición de validación. 
+Hay dos opciones para manejar la precondición de un método: la precondición asumida y la precondición validada. 
 
-- Precondición asumida (también conocida como diseño de precondición exigente). El método asume que la precondición siempre es satisfecha por todos los clientes. 
-Los clientes verifican la precondición antes de llamar al método. 
+- Precondición asumida (también conocida como diseño de precondición exigente). El método asume que la precondición siempre es satisfecha por todos los clientes. Los clientes verifican la precondición antes de llamar al método. 
 
 - Precondición validada (también conocido como diseño de precondición tolerante). La precondición se valida en el cuerpo del método mediante un `if-then` o una estructura de control de equivalencia.
 
-
 La elección de una precondición asumida se adopta en el diseño por contrato. Deben seguirse las reglas de diseño por contrato para utilizar correctamente las precondiciones asumidas. 
-
 
 Al validar la precondición completa en el cuerpo del método, cambiamos la precondición real del método a una tautología (es decir, siempre verdadera) o convertimos el método de una función parcial 
 que no maneja todas las entradas a una función total que maneja todas las entradas. 
@@ -59,28 +55,30 @@ La precondición original se ha convertido en parte de la postcondición actual 
 
 Considera el siguiente método `getCell()` en el programa TicTacToe dado anteriormente:
 
-```
+```Java
 public Cell getCell(int row, int column) {
 	return grid[row][column];
 }
 
 ```
-Suponiendo que `row`  y `column`  dadas representan una celda válida del tablero de tictactoe, devuelve la celda a la que se hace referencia. 
+
+
+Suponiendo que `row`  y `column`  dadas representan una celda válida del tablero de TicTacToe, devuelve la celda a la que se hace referencia. 
 La precondición supuesta y la postcondición correspondiente son las siguientes:
 
 ```
-Precondition: 0<=row < TOTALROWS and 
-0 <=column < TOTALCOLUMNS
-Postcondition: return value is either Cell.EMPTY, 
-Cell.CROSS, or Cell.NAUGHT
+Precondición: 0<=row < TOTALROWS and
+	0 <=column < TOTALCOLUMNS
+Postcondición: el valor de retorno es Cell.EMPTY, 
+	Cell.CROSS, o Cell.NAUGHT
 ``` 
 
 Una alternativa es validar la precondición en el cuerpo del método de la siguiente manera:
 
-```
+```Java
 public Cell getCell(int row, int column) {
 	if (row >= 0 && row < TOTALROWS 
- && column >= 0 && column < TOTALCOLUMNS) {
+ 		&& column >= 0 && column < TOTALCOLUMNS) {
 		return grid[row][column];
 	} else {
 		return null;
@@ -90,34 +88,51 @@ public Cell getCell(int row, int column) {
 
 **Pregunta:** Indica cuales son los cambios de la precondición y la postcondición del ejemplo anterior.
 
+```Java
+/**
+ * @precond  0 <= row <TOTAL.ROWS and 0<= column < TOTAL.COLUMNS
+ * @postcond return value is CELL EMPTY, CELL CROSS or CELL NAUGHT
+ * otherwise return null
+*/
+```
+
 Un caso especial de precondiciones validadas es el manejo de excepciones: el método genera una excepción cuando no se cumple la precondición. 
 
 El método `getCell()` anterior se puede implementar de la siguiente manera:
 
-
-```
+```Java
 if (row >= 0 && row < TOTALROWS 
  && column >= 0 && column < TOTALCOLUMNS) {
 	   return grid[row][column];
 	} else {
-	   throw new Exception("Out of bound");
+	   throw new Exception("Fuera de límite");
 	}
 }
 
 ```
 **Pregunta:** Escribe la nueva precondición. ¿Se relacionada con la postcondición revisada?.
 
+```Java
+/**
+ * @precond none (tautología, siempre aplicable)
+ * @postcond return value is CELL EMPTY, CELL CROSS or CELL NAUGHT
+ * if row >= 0 && row < TOTAL.ROWS and 0<= column < TOTAL.COLUMNS
+ * otherwise throw new OutOfBoardException 
+*/
+```
+
 En TDD, la precondición y la postcondición de un método cambian con el tiempo a medida que evoluciona el proceso de desarrollo. 
  
-
 La precondición y la poscondición en un momento determinado solo implican las suposiciones que subyacen en el código actual. 
 
 Ten en cuenta que un programa TicTacToe puede adoptar la primera versión de `getCell()`, suponiendo que todas las llamadas a `getCell` proporcionen una fila y una columna válidas. 
 
 La razón es que `getCell` solo será llamado por `TicTacToeGUI`  que es confiable porque el mismo desarrollador o el mismo equipo lo escribe. 
+
+
 Esto implica que las siguientes pruebas para los criterios de aceptación AC 1.2 y AC 1.3 se vuelven redundantes e inútiles.
 
-```
+```Java
 public void testInvalidRow(){
     assertEquals(" ", board.getCell(3, 0), null);
    }
@@ -129,28 +144,32 @@ public void testInvalidColumn() {
 
 Las precondiciones  y postcondiciones deben especificarse con precisión, ya sea documentación API escrita o aserciones ejecutables. 
 
-Por ejemplo, la precondición y la postcondición a continuación brindan una especificación rigurosa del método `int max(int [ ], list)`, que devuelve el valor máximo de una lista dada de enteros, 
+Por ejemplo, la precondición y la postcondición a continuación brindan una especificación rigurosa del método `int max(int [ ], lista)`, que devuelve el valor máximo de una lista dada de enteros, 
 donde `max` representa el valor de retorno.
 
 ```
-Precondition: list.length>0
-Postcondition: max>= list[i] for each i 
-  (0 ≤ i< list.length), and there exists j 
-  (0 ≤ j< list.length) such that max=list[j]
+Precondición: lista.length>0
+Postcondición: max>= lista[i] para cada i 
+  	(0 ≤ i< lista.length), y existe j 
+  (0 ≤ j< lista.length) tal que max=lista[j]
 ```
 Esta especificación se puede usar para razonar sobre la corrección de una implementación concreta de `max (lista int [ ])`. Considera el siguiente código:
 
-```
-int max(int[] list){
-	int result=list[0];
-	for (int i=0; i<list.length-1; i++){
-	     if (result<list[i])
-		result=list[i];
+```Java
+int max(int[] lista){
+	int resultado=lista[0];
+	for (int i=0; i<lista.length-1; i++){
+	     if (resultado<lista[i])
+		resultado=lista[i];
 	}
-	return result;
+	return resultado;
 }
 ``` 
-**Pregunta:**  Dada `list = [3,2, 5]` ¿se cumple La postcondición ?. La expresión `i < list.length -1` debe cambiarse a `i < list.length` o `i < list.length -1`. 
+**Pregunta:**  Dada `lista = [3,2, 5]` ¿se cumple La postcondición ?. La expresión `i < lista.length -1` debe cambiarse a `i < lista.length` o `i < lista.length -1`. 
+
+``` 
+Debe cambiarse a: i < lista.length
+```
 
 También se pueden usar precondiciones y postcondiciones para diseñar casos de prueba. 
 
@@ -167,7 +186,7 @@ Si bien parece captar los significados de tipo, es incorrecto.
 
 Como contraejemplo, se satisface con la siguiente implementación defectuosa, que simplemente devuelve una lista de 1 con la misma longitud:
 
-```
+```Java
 public int [ ] sort (int p [ ]){
    int[ ] q = new int [p.length];
    for (int i = 0; i < p.length; i ++)
@@ -185,6 +204,12 @@ Desafortunadamente, esta especificación de postcondición sigue siendo incorrec
 
 **Pregunta:** Encuentra un ejemplo que indique que la implementación es defectuosa. 
 
+```Java
+int[] p = {3,2,2,5};
+int[] q = sort(p);
+//Pues no denota que el numero de ocurrencias del elemento 2 sea el mismo
+```
+
 La siguiente es una especificación correcta, donde `count(int x, int[ ] y)` denota el número de ocurrencias del elemento `x` en la lista `y`: 
 
 **Postcondición (v3):** `p.length = q.length` y `q[i] <= q[i +1]` para cualquier `i, 0 <= i < q.length -1` y `count(p[j], p) = count(p[j], q)` para cualquier `j, 0 <= j < p.length`. 
@@ -197,7 +222,7 @@ Sin embargo, una especificación completa puede necesitar considerar lo que debe
 
 Considera el siguiente método en una clase `VendingMachine` que permite a un cliente comprar artículos de una máquina expendedora.
 
-``` 
+```Java
 public boolean purchase(String drink){
         if (drink.equalsIgnoreCase(COFFEE)){
             if (coffee.getCount()>0&&deposit>=coffee.getPrice()){
@@ -207,12 +232,14 @@ public boolean purchase(String drink){
             }
         } 
     ...
+}
 ``` 
-Una máquina expendedora vende varios artículos, como café, refrescos y jugos. 
-Cuando se compra un artículo de café, los cambios esperados incluyen: 
+Una máquina expendedora vende varios artículos, como café, refrescos y jugos. Cuando se compra un artículo de café, los cambios esperados incluyen: 
 
 (a) el conteo de artículos de café se reduce en uno
+
 (b) se devuelve el dinero de cambio 
+
 (c) el depósito se restablece. 
 
 Estos cambios normalmente se especifican como parte de la postcondición. 
@@ -223,7 +250,7 @@ Si esto no se verifica, podemos perder la oportunidad de revelar un error.
 
 Considera el siguiente código.
 
-``` 
+```Java
 public boolean purchase(String drink){
         if (drink.equalsIgnoreCase(COFFEE)){
             if (coffee.getCount()>0&&deposit>=coffee.getPrice()){
@@ -238,9 +265,29 @@ public boolean purchase(String drink){
 
 **Pregunta:** Explica que sucede en este código. ¿Qué se puede mejorar en el código dado?. 
 
+```
+Se compra un café si es que hay stock y el depósito es mayor o igual que el precio de café. Luego se calcula el vuelto.
+Se podría mejorar la implementación para devolver el cambio, pues ahora se está calculando pero no se almacena en ningún lado y tampoco reestablece el depósito. 
+```
 **Pregunta:** Realiza los siguientes, escribiendo la implementación correspondiente . 
 
 - `int[] reverse(int[] list)` devuelve el orden inverso de todos los elementos de la lista. 
+
+```Java
+/**
+ * @precond list.length>0
+ * @postcond list.length = reverseList.length and
+ * for any 0<=i<list.length, list[i] = reverseList[list.length-1-i] and
+ * count(list[j], list) = count(list[j], reverseList)  for any 0<=j<list.length
+ */
+int [] reverse(int[] list){
+    int[] reverseList = new int[list.length];
+    for(int i = 0; i< list.length;i++){
+        reverseList[i] = list[list.length-1-i];
+    }
+    return reverseList;
+}
+```
 
 - `int linearSearch(int[] list, int key)` devuelve el índice de la primera aparición de la clave en la lista o -1 si no se encuentra. 
 

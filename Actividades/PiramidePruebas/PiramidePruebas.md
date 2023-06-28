@@ -91,7 +91,7 @@ Con una comprensión clara de los diferentes niveles de prueba y sus beneficios,
 A menudo se usa una pirámide para ilustrar esta idea, como se muestra en la figura. 
 
 
-<img src="https://github.com/kapumota/Actividades/blob/main/PiramidePruebas/Imagenes/TrianguloPruebas.png" alt="drawing" width="500"/>
+<img src="Imagenes/TrianguloPruebas.png" alt="drawing" width="500"/>
 
 
 El tamaño de la porción en la pirámide representa el número relativo de pruebas a realizar en cada nivel de prueba. 

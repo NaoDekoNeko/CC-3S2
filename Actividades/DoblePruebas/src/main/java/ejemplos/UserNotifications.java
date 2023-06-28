@@ -18,5 +18,4 @@ public class UserNotifications{
             throw new NotificationFailureException("not-an-email-address");
         }
     }
-
 }

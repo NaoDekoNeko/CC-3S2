@@ -7,6 +7,6 @@ class LanzamientoDadosTest{
     	var stub = new StubNumeroAleatorio();
     	var lanzado = new LanzamientoDados(stub);
     	var actual = lanzado.asText();
-    			assertThat(actual).isEqualTo("Sacaste un 5");
+		assertThat(actual).isEqualTo("Sacaste un 5");
    }
 }

@@ -57,7 +57,7 @@ public class UserGreetingTest {
                 .thenReturn("Kapumota");
         var greeting = new UserGreeting(profiles);
         String actual =
-                greeting.formatGreeting(new UserId(""));
+                greeting.formatGreeting(USER_ID);
         assertThat(actual)
                 .isEqualTo("Hola y bienvenido, Kapumota");
     }

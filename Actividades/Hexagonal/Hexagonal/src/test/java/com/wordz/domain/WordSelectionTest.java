@@ -6,8 +6,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.random.RandomGenerator;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
@@ -31,9 +29,7 @@ public class WordSelectionTest {
 
     @Test
     void selectsWordAtRandom() {
-        when(repository.highestWordNumber()).thenReturn(HIGHEST_WORD_NUMBER);
         when(random.next(HIGHEST_WORD_NUMBER)).thenReturn(WORD_NUMBER_SHINE);
-        when(repository.fetchWordByNumber(WORD_NUMBER_SHINE)).thenReturn("SHINE");
 
         var selector = new WordSelection(repository, random);
 

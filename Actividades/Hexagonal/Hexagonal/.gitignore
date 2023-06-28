@@ -7,6 +7,9 @@
 
 # Folder view configuration files
 .DS_Store
+.vscode
+.idea
+.gradle
 Desktop.ini
 
 # Thumbnail cache files

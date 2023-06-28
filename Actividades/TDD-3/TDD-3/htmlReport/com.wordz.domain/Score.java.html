@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Score.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">WordTest Coverage Results</a> &gt; <a href="index.source.html" class="el_package">com.wordz.domain</a> &gt; <span class="el_source">Score.java</span></div><h1>Score.java</h1><pre class="source lang-java linenums">package com.wordz.domain;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Score {
+    private final String correct;
+    private int position;
+<span class="fc" id="L9">    private final List&lt;Letter&gt; results =</span>
+            new ArrayList&lt;&gt;();
+
+<span class="fc" id="L12">    public Score(String correct) {</span>
+<span class="fc" id="L13">        this.correct = correct;</span>
+<span class="fc" id="L14">    }</span>
+
+    // funcion que retorna el valor del resultado que se almaceno en la lista
+    public Letter letter(int position) {
+<span class="fc" id="L18">        return results.get(position);</span>
+    }
+    // funcion que rellena la lista de resultados por letra
+    public void assess(String attempt) {
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        for (char current: attempt.toCharArray()) {</span>
+<span class="fc" id="L23">            results.add( scoreFor(current) );</span>
+<span class="fc" id="L24">            position++;</span>
+        }
+<span class="fc" id="L26">    }</span>
+    //esto ayuda al codigo de llamada, es una mejor forma de comentar
+    //desde el nombre de la funcion nos especifica su responsabilidad
+
+    // funcion que verifica si la letra esta contenida en la palabra correcta
+    private boolean occursInWord(char current){
+<span class="fc" id="L32">        return</span>
+<span class="fc" id="L33">                correct.contains(String.valueOf(current));</span>
+    }
+    // funcion que verifica si la letra es la correcta en la posicion actual
+    private boolean isCorrectLetter(char currentLetter){
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        return correct.charAt(position) == currentLetter;</span>
+    }
+    //va a asignar un score
+    private Letter scoreFor(char current) {
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if (isCorrectLetter(current)) {</span>
+<span class="fc" id="L42">            return Letter.CORRECT;</span>
+        }
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        if (occursInWord(current)) {</span>
+<span class="fc" id="L45">            return Letter.PART_CORRECT;</span>
+        }
+<span class="fc" id="L47">        return Letter.INCORRECT;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

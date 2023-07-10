@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hola-mundo-python-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hola-mundo-python
+  template:
+    metadata:
+      labels:
+        app: hola-mundo-python
+    spec:
+      containers:
+      - name: ptc
+        image: naodeko/hola_mundo_python:latest
+        ports:
+        - containerPort: 8080

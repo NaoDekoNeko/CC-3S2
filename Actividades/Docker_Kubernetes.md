@@ -79,7 +79,36 @@ Este comando aplica tu configuración de despliegue en tu clúster de Kubernetes
 
 8. **Eliminar pods en tu clúster de Kubernetes**: Para eliminar pods creados por un despliegue en tu clúster de Kubernetes, puedes eliminar pods individuales usando su nombre o ID con el comando `kubectl delete pod <nombre-del-pod>`, o puedes eliminar el despliegue en sí mismo usando el comando `kubectl delete deployment <nombre-del-despliegue>`. Al eliminar el despliegue, Kubernetes eliminará automáticamente todos los pods administrados por el despliegue.
 
-9. **Enviar solicitudes a un servicio que se ejecuta en tu clúster de Kubernetes**: Para enviar solicitudes a un servicio que se ejecuta en tu clúster de Kubernetes, puedes usar una herramienta como `curl` para enviar solicitudes HTTP al punto final del servicio. Los detalles exactos de cómo hacer esto dependen de cómo se expone tu servicio y cómo está configurado tu clúster. Por ejemplo, si tu servicio está expuesto como un servicio NodePort, puedes usar la dirección IP del nodo y el puerto del nodo asignado al servicio para enviar solicitudes al servicio.
+9. **Crear servicio en un clúster de kubernetes**:Un servicio de tipo `NodePort` es una forma de exponer un servicio en un puerto específico en cada nodo de tu clúster de Kubernetes. Esto te permite acceder a tu servicio desde fuera del clúster utilizando la dirección IP de cualquier nodo y el puerto asignado por el servicio.
+
+Aquí hay un ejemplo de una configuración simple de servicio que expone el despliegue `mi-despliegue` en un puerto aleatorio entre 30000 y 32767 en cada nodo de tu clúster:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: mi-servicio
+spec:
+  type: NodePort
+  selector:
+    app: miapp
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+```
+
+En esta configuración, hemos cambiado el tipo de servicio a `NodePort` y hemos eliminado la sección `nodePort`. Esto le dice a Kubernetes que asigne un puerto aleatorio entre 30000 y 32767 en cada nodo para exponer este servicio.
+
+Una vez que hayas aplicado esta configuración en tu clúster de Kubernetes, podrás acceder a tu servicio desde fuera del clúster utilizando la dirección IP de cualquier nodo y el puerto asignado por el servicio. Puedes encontrar el puerto asignado por el servicio ejecutando el siguiente comando:
+
+```
+kubectl get service mi-servicio
+```
+
+Este comando muestra información sobre el servicio `mi-servicio`, incluyendo el puerto asignado por el servicio en la columna `NODEPORT`. 
+
+10. **Enviar solicitudes a un servicio que se ejecuta en tu clúster de Kubernetes**: Para enviar solicitudes a un servicio que se ejecuta en tu clúster de Kubernetes, puedes usar una herramienta como `curl` para enviar solicitudes HTTP al punto final del servicio. Los detalles exactos de cómo hacer esto dependen de cómo se expone tu servicio y cómo está configurado tu clúster. Por ejemplo, si tu servicio está expuesto como un servicio NodePort, puedes usar la dirección IP del nodo y el puerto del nodo asignado al servicio para enviar solicitudes al servicio.
 
 Aquí hay un ejemplo de cómo puedes usar el comando `curl` para enviar una solicitud a un servicio que se ejecuta en el puerto 8080 en un pod en tu clúster de Kubernetes:
 

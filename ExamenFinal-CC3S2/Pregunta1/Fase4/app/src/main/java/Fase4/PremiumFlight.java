@@ -1,6 +1,5 @@
 package Fase4;
 
-
 public class PremiumFlight extends Flight{
 
     public PremiumFlight(String id) {

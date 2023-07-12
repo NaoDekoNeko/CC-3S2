@@ -1,12 +1,13 @@
 package Fase5;
 import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set; 
+import java.util.HashMap;
+import java.util.Map;
+
 
 public abstract class Flight { 
 
     private String id; 
-    protected Set<Passenger> passengers = new HashSet<>(); 
+    protected Map<String, Passenger> passengers = new HashMap<>(); 
 
     public Flight(String id) { 
         this.id = id;
@@ -17,8 +18,8 @@ public abstract class Flight {
     } 
 
 
-    public Set<Passenger> getPassengersList() { 
-        return Collections.unmodifiableSet(passengers); 
+    public Map<String, Passenger> getPassengersList() { 
+        return Collections.unmodifiableMap(passengers); 
     } 
 
     public abstract boolean addPassenger(Passenger passenger);

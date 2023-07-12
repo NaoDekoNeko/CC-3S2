@@ -11,7 +11,7 @@ public class PremiumFlight extends Flight{
     public boolean addPassenger(Passenger passenger) {
         //solo se agrega si es VIP
         if(passenger.isVip())
-            return passengers.add(passenger);
+            return passengers.putIfAbsent(passenger.getName(),passenger) == null;
         return false;
     }
 
@@ -19,7 +19,7 @@ public class PremiumFlight extends Flight{
     public boolean removePassenger(Passenger passenger) {
         //se puede remover a los pasajeros
         //Precondicion: todos los pasajeros de este vuelo son VIP
-        return passengers.remove(passenger);
+        return passengers.remove(passenger.getName()) != null;
     }
     
 }

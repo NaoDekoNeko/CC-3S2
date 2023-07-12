@@ -8,13 +8,11 @@ public class Passenger {
         this.vip = vip; 
     } 
 
-
     public String getName() { 
         return name; 
     } 
 
     public boolean isVip() { 
         return vip; 
-
     } 
 } 

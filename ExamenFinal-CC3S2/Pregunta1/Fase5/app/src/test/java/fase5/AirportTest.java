@@ -38,7 +38,7 @@ public class AirportTest {
                         () -> assertEquals("1", economyFlight.getId()),
                         () -> assertEquals(true, economyFlight.addPassenger(checha)),
                         () -> assertEquals(1, economyFlight.getPassengersList().size()),
-                        () -> assertEquals(true, economyFlight.getPassengersList().contains(checha)),
+                        () -> assertEquals("Checha", economyFlight.getPassengersList().get("Checha").getName()),
                         () -> assertEquals(true, economyFlight.removePassenger(checha)),
                         () -> assertEquals(0, economyFlight.getPassengersList().size())
                 );
@@ -50,9 +50,17 @@ public class AirportTest {
                 assertAll("Verifica que no se puede volver a registrar", 
                     () -> assertEquals(true, economyFlight.addPassenger(checha)),
                     () -> assertEquals(1, economyFlight.getPassengersList().size()),
-                    () -> assertEquals(true, economyFlight.getPassengersList().contains(checha)),
+                    () -> assertEquals("Checha", economyFlight.getPassengersList().get("Checha").getName()),
                     () -> assertEquals(false, economyFlight.addPassenger(checha)),
                     () -> assertEquals(1, economyFlight.getPassengersList().size())
+                );
+            }
+
+            @Test
+            @DisplayName("En ningun caso se puede eliminar un pasajero que no está registrado")
+            public void testDeletingNull() {
+                assertAll("No se puede eliminar sino está registrado en el vuelo", 
+                    () -> assertEquals(false, economyFlight.removePassenger(checha))
                 );
             }
         }
@@ -67,7 +75,7 @@ public class AirportTest {
                         () -> assertEquals("1", economyFlight.getId()),
                         () -> assertEquals(true, economyFlight.addPassenger(lore)),
                         () -> assertEquals(1, economyFlight.getPassengersList().size()),
-                        () -> assertEquals(true, economyFlight.getPassengersList().contains(lore)),
+                        () -> assertEquals("Lore", economyFlight.getPassengersList().get("Lore").getName()),
                         () -> assertEquals(false, economyFlight.removePassenger(lore)),
                         () -> assertEquals(1, economyFlight.getPassengersList().size())
                 );
@@ -75,11 +83,11 @@ public class AirportTest {
 
             @Test
             @DisplayName("No se puede registrar dos veces en un mismo vuelo")
-            public void testEconomyFlightRegularPassengerReRegister() {
+            public void testEconomyFlightVipPassengerReRegister() {
                 assertAll("Verifica que no se puede volver a registrar", 
                     () -> assertEquals(true, economyFlight.addPassenger(lore)),
                     () -> assertEquals(1, economyFlight.getPassengersList().size()),
-                    () -> assertEquals(true, economyFlight.getPassengersList().contains(lore)),
+                    () -> assertEquals("Lore", economyFlight.getPassengersList().get("Lore").getName()),
                     () -> assertEquals(false, economyFlight.addPassenger(lore)),
                     () -> assertEquals(1, economyFlight.getPassengersList().size())
                 );
@@ -131,6 +139,18 @@ public class AirportTest {
                         () -> assertEquals(1, businessFlight.getPassengersList().size())
                 );
             }
+
+            @Test
+            @DisplayName("No se puede registrar dos veces en un mismo vuelo")
+            public void testBusinessFlightVipPassengerReRegister() {
+                assertAll("Verifica que no se puede volver a registrar", 
+                    () -> assertEquals(true, businessFlight.addPassenger(lore)),
+                    () -> assertEquals(1, businessFlight.getPassengersList().size()),
+                    () -> assertEquals("Lore", businessFlight.getPassengersList().get("Lore").getName()),
+                    () -> assertEquals(false, businessFlight.addPassenger(lore)),
+                    () -> assertEquals(1, businessFlight.getPassengersList().size())
+                );
+            }
         }
     }
 
@@ -175,6 +195,18 @@ public class AirportTest {
                         () -> assertEquals(1, premiumFlight.getPassengersList().size()),
                         () -> assertEquals(true, premiumFlight.removePassenger(lore)),
                         () -> assertEquals(0, premiumFlight.getPassengersList().size())
+                );
+            }
+
+            @Test
+            @DisplayName("No se puede registrar dos veces en un mismo vuelo")
+            public void testPremiumFlightVipPassengerReRegister() {
+                assertAll("Verifica que no se puede volver a registrar", 
+                    () -> assertEquals(true, premiumFlight.addPassenger(lore)),
+                    () -> assertEquals(1, premiumFlight.getPassengersList().size()),
+                    () -> assertEquals("Lore", premiumFlight.getPassengersList().get("Lore").getName()),
+                    () -> assertEquals(false, premiumFlight.addPassenger(lore)),
+                    () -> assertEquals(1, premiumFlight.getPassengersList().size())
                 );
             }
         }

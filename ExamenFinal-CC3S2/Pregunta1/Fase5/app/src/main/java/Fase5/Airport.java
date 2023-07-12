@@ -15,15 +15,13 @@ public class Airport {
         economyFlight.addPassenger(lore); 
 
         System.out.println(" Lista de pasajeros de vuelos de negocios:"); 
-        for (Passenger passenger : businessFlight.getPassengersList()) { 
-            System.out.println(passenger.getName()); 
+        for (var entry : businessFlight.getPassengersList().entrySet()) { 
+            System.out.println(entry.getValue().getName()); 
         } 
 
         System.out.println(" Lista de pasajeros de vuelos economicos:"); 
-        for (Passenger passenger : economyFlight.getPassengersList()) { 
-            System.out.println(passenger.getName()); 
+        for (var entry : economyFlight.getPassengersList().entrySet()) { 
+            System.out.println(entry.getValue().getName()); 
         } 
-
     } 
-
 } 

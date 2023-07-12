@@ -38,9 +38,21 @@ public class AirportTest {
                         () -> assertEquals("1", economyFlight.getId()),
                         () -> assertEquals(true, economyFlight.addPassenger(checha)),
                         () -> assertEquals(1, economyFlight.getPassengersList().size()),
-                        () -> assertEquals("Checha", economyFlight.getPassengersList().),
+                        () -> assertEquals(true, economyFlight.getPassengersList().contains(checha)),
                         () -> assertEquals(true, economyFlight.removePassenger(checha)),
                         () -> assertEquals(0, economyFlight.getPassengersList().size())
+                );
+            }
+
+            @Test
+            @DisplayName("No se puede registrar dos veces en un mismo vuelo")
+            public void testEconomyFlightRegularPassengerReRegister() {
+                assertAll("Verifica que no se puede volver a registrar", 
+                    () -> assertEquals(true, economyFlight.addPassenger(checha)),
+                    () -> assertEquals(1, economyFlight.getPassengersList().size()),
+                    () -> assertEquals(true, economyFlight.getPassengersList().contains(checha)),
+                    () -> assertEquals(false, economyFlight.addPassenger(checha)),
+                    () -> assertEquals(1, economyFlight.getPassengersList().size())
                 );
             }
         }
@@ -59,7 +71,18 @@ public class AirportTest {
                         () -> assertEquals(false, economyFlight.removePassenger(lore)),
                         () -> assertEquals(1, economyFlight.getPassengersList().size())
                 );
+            }
 
+            @Test
+            @DisplayName("No se puede registrar dos veces en un mismo vuelo")
+            public void testEconomyFlightRegularPassengerReRegister() {
+                assertAll("Verifica que no se puede volver a registrar", 
+                    () -> assertEquals(true, economyFlight.addPassenger(lore)),
+                    () -> assertEquals(1, economyFlight.getPassengersList().size()),
+                    () -> assertEquals(true, economyFlight.getPassengersList().contains(lore)),
+                    () -> assertEquals(false, economyFlight.addPassenger(lore)),
+                    () -> assertEquals(1, economyFlight.getPassengersList().size())
+                );
             }
         }
     }
@@ -155,5 +178,5 @@ public class AirportTest {
                 );
             }
         }
-    }
+    }    
 }

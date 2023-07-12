@@ -9,12 +9,6 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
-    id 'jacoco'
-}
-
-jacoco
-{
-    toolVersion = "0.8.8"
 }
 
 repositories {
@@ -24,18 +18,15 @@ repositories {
 
 dependencies {
     // Use JUnit Jupiter for testing.
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:31.1-jre'
-
-    testImplementation 'org.assertj:assertj-core:3.22.0'
 }
 
 application {
     // Define the main class for the application.
-    mainClass = 'fase5.App'
+    mainClass = 'webclient.App'
 }
 
 tasks.named('test') {

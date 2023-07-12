@@ -1,3 +1,5 @@
+package webclient;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -9,7 +11,7 @@ public class TestWebClientInicial{
 
     @BeforeAll
     public static void setUp() {
-.
+
     }
 
     @AfterAll

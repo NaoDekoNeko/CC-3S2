@@ -1,3 +1,5 @@
+package webclient;
+
 import java.net.URL;
 import java.net.HttpURLConnection;
 import java.io.InputStream;

@@ -1,9 +1,9 @@
-package com.kapumota.microservicios.core.product.services;
+package com.kapumota.microservicios.core.product.productservice.services;
 
 import com.kapumota.api.core.product.Product;
 import com.kapumota.api.core.product.ProductService;
-import com.kapumota.common.exceptions.InvalidInputException;
-import com.kapumota.common.exceptions.NotFoundException;
+import com.kapumota.microservicios.common.exceptions.InvalidInputException;
+import com.kapumota.microservicios.common.exceptions.NotFoundException;
 import com.kapumota.util.http.ServiceUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

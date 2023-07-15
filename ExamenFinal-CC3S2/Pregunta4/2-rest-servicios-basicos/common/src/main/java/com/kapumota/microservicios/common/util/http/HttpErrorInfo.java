@@ -1,4 +1,4 @@
-package com.kapumota.util.http;
+package com.kapumota.microservicios.common.util.http;
 
 import java.time.ZonedDateTime;
 import org.springframework.http.HttpStatus;

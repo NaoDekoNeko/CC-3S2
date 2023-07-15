@@ -2,9 +2,7 @@ package com.kapumota.api.composite.product;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +17,7 @@ import com.kapumota.api.core.recommendation.RecommendationService;
 import com.kapumota.api.core.review.Review;
 import com.kapumota.api.core.review.ReviewService;
 
-@ComponentScan(basePackages = "com.kapumota.api.composite.product")
+@Component
 public class ProductCompositeIntegration implements ProductService,
 RecommendationService, ReviewService{
 

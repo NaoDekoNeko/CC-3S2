@@ -3,6 +3,8 @@ package com.kapumota.api.composite.product;
 import java.util.ArrayList;
 import java.util.List;
 import com.kapumota.util.http.ServiceUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +14,7 @@ import com.kapumota.api.core.review.Review;
 
 @RestController
 public class ProductCompositeServiceImpl implements ProductCompositeService{
-
+    private static final Logger LOG = LoggerFactory.getLogger(ProductCompositeServiceImpl.class);
     private final ServiceUtil serviceUtil;
     private final ProductCompositeIntegration integration;
 
@@ -22,9 +24,9 @@ public class ProductCompositeServiceImpl implements ProductCompositeService{
         this.integration = integration;
     }
 
-
     @Override
     public ProductAggregate getProduct(int productId) {
+        LOG.debug("/producto devuelto para el id del producto={}", productId);
         Product product = integration.getProduct(productId);
         List<Recommendation> recommendations = integration.getRecommendations(productId);
         List<Review> reviews = integration.getReviews(productId);
@@ -63,7 +65,4 @@ public class ProductCompositeServiceImpl implements ProductCompositeService{
                 serviceAddresses
         );
     }
-
-
-
 }

@@ -1,10 +1,10 @@
-package com.kapumota.util.http;
+package com.kapumota.microservicios.common.util.http;
 
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
 
-import com.kapumota.common.exceptions.InvalidInputException;
-import com.kapumota.common.exceptions.NotFoundException;
+import com.kapumota.microservicios.common.exceptions.InvalidInputException;
+import com.kapumota.microservicios.common.exceptions.NotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

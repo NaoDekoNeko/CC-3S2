@@ -4,6 +4,8 @@ Cada pregunta está dentro de su carpeta.
 
 Los proyectos se han creado usando gradle en vscode, se ha hecho uso de jacoco para el codecoverage.
 
+> No puse imágenes del desarrollo rojo verde del TDD, pero puedo asegurar que se hizo de esa forma.
+
 ## Pregunta 1
 
 ### Antes
@@ -559,3 +561,468 @@ public class Airport {
     } 
 }
 ```
+
+## Pregunta 2
+
+> Parte 1
+> 
+
+aquí está el pom.xml y es lo que sale en el navegador
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>WebClient</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>jetty</artifactId>
+            <version>7.0.0.pre5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+```
+
+![Untitled](Examen%20Final%20CC-3S2/Untitled.png)
+
+Para que funcione en mi pc tuve que cambiar el código de Jetty.java:
+
+```java
+public class Jetty {
+    public static void main(String[] args) throws Exception {
+        Server server = new Server(8081);
+
+        Context root = new Context(server, "/");
+        root.setResourceBase("C:\\Users\\Ademar\\OneDrive\\Desktop\\CC-3S2\\ExamenFinal-CC3S2\\Pregunta2\\WebClient\\pom.xml");
+        root.setHandler(new ResourceHandler());
+
+        server.setStopAtShutdown(true);
+        server.start();
+    }
+}
+```
+
+pues con:
+
+```java
+root.setResourceBase("/pom.xml");
+```
+
+Obtenía error 404, y con:
+
+```java
+root.setResourceBase(".");
+```
+
+Obtenía error 403.
+
+> Parte 2
+> 
+
+Implementamos:
+
+```java
+package org.example;
+
+import java.io.IOException;
+import java.io.OutputStream;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.mortbay.jetty.HttpHeaders;
+import org.mortbay.jetty.Server;
+import org.mortbay.jetty.handler.AbstractHandler;
+import org.mortbay.jetty.servlet.Context;
+import org.mortbay.util.ByteArrayISO8859Writer;
+
+public class Jetty {
+    public static void main(String[] args) throws Exception {
+        Server server = new Server(8081);
+
+        Context root = new Context(server, "/");
+        root.setResourceBase("C:\\Users\\Ademar\\OneDrive\\Desktop\\CC-3S2\\ExamenFinal-CC3S2\\Pregunta2\\WebClient\\pom.xml");
+        root.setHandler(new TestGetContentOkHandler());
+
+        server.setStopAtShutdown(true);
+        server.start();
+    }
+
+    private static class TestGetContentOkHandler extends AbstractHandler {
+        public void handle(String target, HttpServletRequest request, HttpServletResponse response, int dispatch) throws IOException {
+            OutputStream out = response.getOutputStream();
+            ByteArrayISO8859Writer writer = new ByteArrayISO8859Writer ();
+            writer.write("Esto funciona");
+            writer.flush();
+            response.setIntHeader(HttpHeaders.CONTENT_LENGTH, writer.size());
+            writer.writeTo(out);
+            out.flush();
+        }
+    }
+}
+```
+
+> Parte 3
+> 
+
+Implementamos la prueba, en este caso utilicé la que está en la carpeta del examen, solo le quité la anotación que la deshabilitaba y el test pasa. 
+
+<aside>
+💡 Pero solo pasa cuando tengo en ejecución Jetty.java
+
+</aside>
+
+```java
+package org.example;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.junit.jupiter.api.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class TestWebClientInicial{
+
+    @BeforeAll
+    public static void setUp() {
+    }
+
+    @AfterAll
+    public static void tearDown() {
+        // Se detiene Jetty.
+    }
+
+    @Test
+    //@Disabled(value = "Esto es un ejemplo de prueba inicial . Por tanto si se ejecuta no funciona.")
+    public void testGetContentOk() throws MalformedURLException {
+        WebClient client = new WebClient();
+        String workingContent = client.getContent(new URL("http://localhost:8081/testGetContentOk"));
+
+        assertEquals("Esto funciona", workingContent);
+    }
+}
+```
+
+> Parte 4
+> 
+
+En cuanto a los stubs: lo que se podría hacer es que en vez de esperar una conexión (en este caso, a localhost:8081), se utilice un stub para no requerir de una conexión para asegurarnos de que los métodos funcionan de forma correcta.
+
+> Parte 5
+> 
+
+A base de alt+enter se pudo completar la clase estática StubHttpURLConnection, pues la desconocía totalmente. Gracias a TDD y un IDE como visualcode (también IntelliJ) se puede hacer eso.
+
+```java
+package org.example;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLStreamHandler;
+import java.net.URLStreamHandlerFactory;
+
+import org.junit.jupiter.api.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class TestWebClientInicial{
+
+    @BeforeAll
+    public static void setUp() {
+    }
+
+    @AfterAll
+    public static void tearDown() {
+        // Se detiene Jetty.
+    }
+
+    @Test
+    @Disabled(value = "Esto es un ejemplo de prueba inicial . Por tanto si se ejecuta no funciona.")
+    public void testGetContentOk() throws MalformedURLException {
+        WebClient client = new WebClient();
+        String workingContent = client.getContent(new URL("http://localhost:8081/testGetContentOk"));
+
+        assertEquals("Esto funciona", workingContent);
+    }
+
+    @Test
+    public void testStubGetContentOk() throws MalformedURLException{
+        URL.setURLStreamHandlerFactory(new StubStreamHandlerFactory());
+
+        WebClient client = new WebClient();
+        String result = client.getContent(new URL("http://example.com"));
+        assertEquals("Esto funciona", result);
+    }
+
+    private static class StubStreamHandlerFactory implements URLStreamHandlerFactory {
+        @Override
+        public URLStreamHandler createURLStreamHandler(String protocol) {
+            return new StubHttpURLStreamHandler();
+        }
+    }
+
+    private static class StubHttpURLStreamHandler extends URLStreamHandler {
+        @Override
+        protected URLConnection openConnection(URL url) throws IOException {
+            return new StubHttpURLConnection(url);
+        }
+    }
+
+    private static class StubHttpURLConnection extends HttpURLConnection {
+        public StubHttpURLConnection(URL url) {
+            super(url);
+        }
+
+        @Override
+        public InputStream getInputStream() throws IOException {
+            return new ByteArrayInputStream("Esto funciona".getBytes());
+        }
+
+        @Override
+        public void disconnect() {}
+
+        @Override
+        public boolean usingProxy() {
+            return false;
+        }
+
+        @Override
+        public void connect() throws IOException {}
+    }
+}
+```
+
+## Pregunta 4
+
+> A partir de aquí se viene el declive en la calidad de mi escritura por la falta de tiempo
+>
+
+Después de seguir los pasos, y autocompletando con ayuda del IDE, creé las clases ProductCompositeIntegration, ProductCompositeServiceImpl y agregando los métodos pertinentes, llegué a los siguientes resultados:
+
+```Java
+package com.kapumota.api.composite.product;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.kapumota.util.http.ServiceUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.kapumota.api.core.product.Product;
+import com.kapumota.api.core.recommendation.Recommendation;
+import com.kapumota.api.core.review.Review;
+
+@RestController
+public class ProductCompositeServiceImpl implements ProductCompositeService{
+
+    private final ServiceUtil serviceUtil;
+    private final ProductCompositeIntegration integration;
+
+    @Autowired
+    public ProductCompositeServiceImpl(ServiceUtil serviceUtil, ProductCompositeIntegration integration) {
+        this.serviceUtil = serviceUtil;
+        this.integration = integration;
+    }
+
+    @Override
+    public ProductAggregate getProduct(int productId) {
+        Product product = integration.getProduct(productId);
+        List<Recommendation> recommendations = integration.getRecommendations(productId);
+        List<Review> reviews = integration.getReviews(productId);
+        return createProductAggregate(product, recommendations,
+                reviews, serviceUtil.getServiceAddress());
+    }
+
+    private ProductAggregate createProductAggregate(Product product, List<Recommendation> recommendations, List<Review> reviews, String serviceAddress) {
+        // Creamos la lista con el resumen de recomendaciones
+        List<RecommendationSummary> recommendationSummaries = new ArrayList<>();
+        for (Recommendation r : recommendations) {
+            recommendationSummaries.add(new RecommendationSummary(r.getRecommendationId(), r.getAuthor(), r.getRate()));
+        }
+
+        // Creamos una lista con el resumen de reseñas
+        List<ReviewSummary> reviewSummaries = new ArrayList<>();
+        for (Review r : reviews) {
+            reviewSummaries.add(new ReviewSummary(r.getReviewId(), r.getAuthor(), r.getSubject()));
+        }
+
+        // Creamos un objeto que tendrá las direcciones URL de los servicios que tiene el servicio compuesto
+        ServiceAddresses serviceAddresses = new ServiceAddresses(
+                serviceAddress,
+                integration.getProductServiceUrl(),
+                integration.getReviewServiceUrl(),
+                integration.getRecommendationServiceUrl()
+        );
+
+        // Crea y devuelve el Producto agregado
+        return new ProductAggregate(
+                product.getProductId(),
+                product.getName(),
+                product.getWeight(),
+                recommendationSummaries,
+                reviewSummaries,
+                serviceAddresses
+        );
+    }
+}
+
+```
+
+```Java
+package com.kapumota.api.composite.product;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.kapumota.api.core.product.Product;
+import com.kapumota.api.core.product.ProductService;
+import com.kapumota.api.core.recommendation.Recommendation;
+import com.kapumota.api.core.recommendation.RecommendationService;
+import com.kapumota.api.core.review.Review;
+import com.kapumota.api.core.review.ReviewService;
+
+@ComponentScan(basePackages = "com.kapumota.api.composite.product")
+public class ProductCompositeIntegration implements ProductService,
+RecommendationService, ReviewService{
+
+    private RestTemplate restTemplate;
+    private String productServiceUrl;
+    private String recommendationServiceUrl;
+    private String reviewServiceUrl;
+    private ObjectMapper jsonMapper;
+
+    @Override
+    public List<Review> getReviews(int productId) {
+        String url = reviewServiceUrl + productId;
+        //codigo "complicado" que devuelve la lista de reseñas
+        ResponseEntity<List<Review>> response = restTemplate.exchange(
+            url, HttpMethod.GET, null, new ParameterizedTypeReference<List<Review>>() {}
+        );
+        List<Review> reviews = response.getBody();
+        return reviews;
+    }
+
+    @Override
+    public List<Recommendation> getRecommendations(int productId) {
+        String url = recommendationServiceUrl + productId;
+        //codigo "complicado" que devuelve la lista de recomendaciones
+        ResponseEntity<List<Recommendation>> response = restTemplate.exchange(
+            url, HttpMethod.GET, null,
+            new ParameterizedTypeReference<List<Recommendation>>() {}
+        );
+        List<Recommendation> recommendations = response.getBody();
+        return recommendations;
+    }
+
+    @Override
+    public Product getProduct(int productId) {
+        String url = productServiceUrl + productId;
+        //obtener el producto
+        Product product = restTemplate.getForObject(url, Product.class);
+        return product;
+    }
+
+    public ProductCompositeIntegration(RestTemplate restTemplate, ObjectMapper jsonMapper,
+                                   @Value("${app.product-service.host}") String productServiceHost,
+                                   @Value("${app.product-service.port}") int productServicePort,
+                                   @Value("${app.recommendation-service.host}") String recommendationServiceHost,
+                                   @Value("${app.recommendation-service.port}") int recommendationServicePort,
+                                   @Value("${app.review-service.host}") String reviewServiceHost,
+                                   @Value("${app.review-service.port}") int reviewServicePort) {
+    // guardar los objetos inyectados y sus valores
+    this.restTemplate = restTemplate;
+    this.jsonMapper = jsonMapper;
+
+    // creamos las url para acceder a los objetos core
+    this.productServiceUrl = "http://" + productServiceHost + ":" + productServicePort + "/product/";
+    this.recommendationServiceUrl = "http://" + recommendationServiceHost + ":" + recommendationServicePort + "/recommendation?productId=";
+    this.reviewServiceUrl = "http://" + reviewServiceHost + ":" + reviewServicePort + "/review?productId=";
+}
+
+
+    public String getProductServiceUrl() {
+        return productServiceUrl;
+    }
+
+    public String getReviewServiceUrl() {
+        return reviewServiceUrl;
+    }
+
+    public String getRecommendationServiceUrl() {
+        return recommendationServiceUrl;
+    }
+}
+
+```
+
+Y también agregamos `@Bean` en la clase ProductCompositeServiceApplication, lo que queda de la siguiente forma:
+
+```Java
+package com.kapumota.microservicios.composite.product.productcompositeservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
+
+@SpringBootApplication
+public class ProductCompositeServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProductCompositeServiceApplication.class, args);
+	}
+
+	@Bean
+	RestTemplate restTemplate() {
+		return new RestTemplate();
+	}
+}
+```
+
+<aside>
+💡 Se hizo un cambio muy importante, las excepciones que estaban dentro de util y api se han movido de lugar al proyecto common pues se generaba una dependencia cíclica (o circular) que no permitía utilizar al proyecto util dentro de api pues api ya se usaba dentro de util.
+<aside>
+
+![Alt text](./Examen%20Final%20CC-3S2/image.png)
+
+### Preguntas
+
+- **¿Qué hace el cliente API, es decir, el componente de integración del microservicio Composite** 

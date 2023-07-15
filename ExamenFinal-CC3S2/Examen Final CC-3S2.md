@@ -828,201 +828,47 @@ public class TestWebClientInicial{
 > A partir de aquí se viene el declive en la calidad de mi escritura por la falta de tiempo
 >
 
-Después de seguir los pasos, y autocompletando con ayuda del IDE, creé las clases ProductCompositeIntegration, ProductCompositeServiceImpl y agregando los métodos pertinentes, llegué a los siguientes resultados:
+Después de seguir los pasos, y autocompletando con ayuda del IDE, creé las clases ProductCompositeIntegration, ProductCompositeServiceImpl y agregando los métodos pertinentes, obtuve todo el codigo fuente que está dentro de la carpeta
+
+**Simular NotFoundException**:
 
 ```Java
-package com.kapumota.api.composite.product;
-
-import java.util.ArrayList;
-import java.util.List;
-import com.kapumota.util.http.ServiceUtil;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.kapumota.api.core.product.Product;
-import com.kapumota.api.core.recommendation.Recommendation;
-import com.kapumota.api.core.review.Review;
-
-@RestController
-public class ProductCompositeServiceImpl implements ProductCompositeService{
-
-    private final ServiceUtil serviceUtil;
-    private final ProductCompositeIntegration integration;
-
-    @Autowired
-    public ProductCompositeServiceImpl(ServiceUtil serviceUtil, ProductCompositeIntegration integration) {
-        this.serviceUtil = serviceUtil;
-        this.integration = integration;
-    }
-
-    @Override
+@Override
     public ProductAggregate getProduct(int productId) {
+
         Product product = integration.getProduct(productId);
+        if (product == null) {
+            throw new NotFoundException("No se encontró el producto con id: " + productId);
+        }
         List<Recommendation> recommendations = integration.getRecommendations(productId);
         List<Review> reviews = integration.getReviews(productId);
+
         return createProductAggregate(product, recommendations,
                 reviews, serviceUtil.getServiceAddress());
     }
-
-    private ProductAggregate createProductAggregate(Product product, List<Recommendation> recommendations, List<Review> reviews, String serviceAddress) {
-        // Creamos la lista con el resumen de recomendaciones
-        List<RecommendationSummary> recommendationSummaries = new ArrayList<>();
-        for (Recommendation r : recommendations) {
-            recommendationSummaries.add(new RecommendationSummary(r.getRecommendationId(), r.getAuthor(), r.getRate()));
-        }
-
-        // Creamos una lista con el resumen de reseñas
-        List<ReviewSummary> reviewSummaries = new ArrayList<>();
-        for (Review r : reviews) {
-            reviewSummaries.add(new ReviewSummary(r.getReviewId(), r.getAuthor(), r.getSubject()));
-        }
-
-        // Creamos un objeto que tendrá las direcciones URL de los servicios que tiene el servicio compuesto
-        ServiceAddresses serviceAddresses = new ServiceAddresses(
-                serviceAddress,
-                integration.getProductServiceUrl(),
-                integration.getReviewServiceUrl(),
-                integration.getRecommendationServiceUrl()
-        );
-
-        // Crea y devuelve el Producto agregado
-        return new ProductAggregate(
-                product.getProductId(),
-                product.getName(),
-                product.getWeight(),
-                recommendationSummaries,
-                reviewSummaries,
-                serviceAddresses
-        );
-    }
-}
-
 ```
 
-```Java
-package com.kapumota.api.composite.product;
+Aquí se encuentra el código de cómo se implementa...
 
-import java.util.List;
+Se supone que debería mostrar cómo se ejecuta pero hay un pequeño problema con eso
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.client.RestTemplate;
+Debería poderse ejecutar el servicio Product, pero por alguna razón no lo hace. Me recomienda poner un Bean de RestTemplate, pero eso ya lo hice siguiendo los pasos del ejercicio
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.kapumota.api.core.product.Product;
-import com.kapumota.api.core.product.ProductService;
-import com.kapumota.api.core.recommendation.Recommendation;
-import com.kapumota.api.core.recommendation.RecommendationService;
-import com.kapumota.api.core.review.Review;
-import com.kapumota.api.core.review.ReviewService;
+![Alt text](image.png)
 
-@ComponentScan(basePackages = "com.kapumota.api.composite.product")
-public class ProductCompositeIntegration implements ProductService,
-RecommendationService, ReviewService{
+**El cliente API** Este servicio compuesto une a todos los microservicios para poder agregar un producto, tanto sus reseñas como el producto en sí y las recomendaciones. Es por ello que es necesario tener todos los microservicios corriendo para poder hacer uso de ese servicio que los integra..
 
-    private RestTemplate restTemplate;
-    private String productServiceUrl;
-    private String recommendationServiceUrl;
-    private String reviewServiceUrl;
-    private ObjectMapper jsonMapper;
+**Manejo de errores en recommendations y reviews** 
+A diferencia de lo que hice con Product, debería hacer un try catch pues no es necesario tener reviews o recomendaciones del producto para poder acceder a él, sin embargo para que esto ocurra debo terminar las implementaciones en sus microservicios correspondientes.
 
-    @Override
-    public List<Review> getReviews(int productId) {
-        String url = reviewServiceUrl + productId;
-        //codigo "complicado" que devuelve la lista de reseñas
-        ResponseEntity<List<Review>> response = restTemplate.exchange(
-            url, HttpMethod.GET, null, new ParameterizedTypeReference<List<Review>>() {}
-        );
-        List<Review> reviews = response.getBody();
-        return reviews;
-    }
+**Proceso de validación de integración**
 
-    @Override
-    public List<Recommendation> getRecommendations(int productId) {
-        String url = recommendationServiceUrl + productId;
-        //codigo "complicado" que devuelve la lista de recomendaciones
-        ResponseEntity<List<Recommendation>> response = restTemplate.exchange(
-            url, HttpMethod.GET, null,
-            new ParameterizedTypeReference<List<Recommendation>>() {}
-        );
-        List<Recommendation> recommendations = response.getBody();
-        return recommendations;
-    }
+Como ya mencioné, hubo un error, por lo que la conexión a producto se me deniega y no puedo conectarme
 
-    @Override
-    public Product getProduct(int productId) {
-        String url = productServiceUrl + productId;
-        //obtener el producto
-        Product product = restTemplate.getForObject(url, Product.class);
-        return product;
-    }
+![Alt text](image-1.png)
 
-    public ProductCompositeIntegration(RestTemplate restTemplate, ObjectMapper jsonMapper,
-                                   @Value("${app.product-service.host}") String productServiceHost,
-                                   @Value("${app.product-service.port}") int productServicePort,
-                                   @Value("${app.recommendation-service.host}") String recommendationServiceHost,
-                                   @Value("${app.recommendation-service.port}") int recommendationServicePort,
-                                   @Value("${app.review-service.host}") String reviewServiceHost,
-                                   @Value("${app.review-service.port}") int reviewServicePort) {
-    // guardar los objetos inyectados y sus valores
-    this.restTemplate = restTemplate;
-    this.jsonMapper = jsonMapper;
+Gracias a lo que se muestra en la imagen, cuando busco el curl, lo que obtengo es esto
 
-    // creamos las url para acceder a los objetos core
-    this.productServiceUrl = "http://" + productServiceHost + ":" + productServicePort + "/product/";
-    this.recommendationServiceUrl = "http://" + recommendationServiceHost + ":" + recommendationServicePort + "/recommendation?productId=";
-    this.reviewServiceUrl = "http://" + reviewServiceHost + ":" + reviewServicePort + "/review?productId=";
-}
+![Alt text](image-2.png)
 
-
-    public String getProductServiceUrl() {
-        return productServiceUrl;
-    }
-
-    public String getReviewServiceUrl() {
-        return reviewServiceUrl;
-    }
-
-    public String getRecommendationServiceUrl() {
-        return recommendationServiceUrl;
-    }
-}
-
-```
-
-Y también agregamos `@Bean` en la clase ProductCompositeServiceApplication, lo que queda de la siguiente forma:
-
-```Java
-package com.kapumota.microservicios.composite.product.productcompositeservice;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
-
-@SpringBootApplication
-public class ProductCompositeServiceApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(ProductCompositeServiceApplication.class, args);
-	}
-
-	@Bean
-	RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
-}
-```
-
-<aside>
-💡 Se hizo un cambio muy importante, las excepciones que estaban dentro de util y api se han movido de lugar al proyecto common pues se generaba una dependencia cíclica (o circular) que no permitía utilizar al proyecto util dentro de api pues api ya se usaba dentro de util.
-<aside>
-
-![Alt text](./Examen%20Final%20CC-3S2/image.png)
-
-### Preguntas
-
-- **¿Qué hace el cliente API, es decir, el componente de integración del microservicio Composite** 
+## Pregunta 3

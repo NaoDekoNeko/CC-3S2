@@ -1,4 +1,4 @@
-package com.kapumota.microservicios.common.exceptions;
+package com.kapumota.api.exceptions;
 
 public class NotFoundException extends RuntimeException {
   public NotFoundException() {}

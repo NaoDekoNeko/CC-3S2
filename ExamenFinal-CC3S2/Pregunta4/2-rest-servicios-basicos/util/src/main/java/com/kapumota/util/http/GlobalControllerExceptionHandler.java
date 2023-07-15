@@ -1,10 +1,9 @@
-package com.kapumota.microservicios.common.util.http;
+package com.kapumota.util.http;
 
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
 
-import com.kapumota.microservicios.common.exceptions.InvalidInputException;
-import com.kapumota.microservicios.common.exceptions.NotFoundException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -13,6 +12,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import com.kapumota.api.exceptions.InvalidInputException;
+import com.kapumota.api.exceptions.NotFoundException;
 
 @RestControllerAdvice
 class GlobalControllerExceptionHandler {

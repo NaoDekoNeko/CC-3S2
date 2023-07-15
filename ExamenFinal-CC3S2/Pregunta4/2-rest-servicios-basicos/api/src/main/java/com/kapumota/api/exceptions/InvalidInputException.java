@@ -1,4 +1,4 @@
-package com.kapumota.microservicios.common.exceptions;
+package com.kapumota.api.exceptions;
 
 public class InvalidInputException extends RuntimeException {
   public InvalidInputException() {}

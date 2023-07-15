@@ -872,3 +872,9 @@ Gracias a lo que se muestra en la imagen, cuando busco el curl, lo que obtengo e
 ![Alt text](image-2.png)
 
 ## Pregunta 3
+
+<aside>
+ 🛑Alerta de excusa
+<aside>
+
+Dado el quebradero de cabeza que fue intentar arreglar el problema anterior de la pregunta 4, sumado a que mi ultimo examen final (sin contar este) acabó ~~conmigo~~ ayer a las 9pm, no me ha dado tiempo de empezar la pregunta 3.
